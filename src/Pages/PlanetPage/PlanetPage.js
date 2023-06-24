@@ -31,9 +31,8 @@ const PlanetPage = () => {
             {photos[0] ? <img className="medium-img" src={photos[0].url}></img> : ""}
             <h2 className="planet-title"> {name}</h2>
             <p>
-                The scientist who made the most significant contributions to the discovery is <Link to={`/discoverers/${discovererId}`}>{discoverer.name} {discoverer.occupation}</Link>. Earth belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system, which is located in the {galaxy} Galaxy. {name} {satellitesText}.
+                The scientist who made the most significant contributions to the discovery is <Link to={`/discoverers/${discovererId}`}>{discoverer.name} {discoverer.occupation}</Link>. {name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system, which is located in the {galaxy} Galaxy. {name} {satellitesText}.
             </p>
-
         </div>
     )
 }

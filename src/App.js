@@ -10,6 +10,7 @@ import GalleryPage from "./Pages/GalleryPage/GalleryPage";
 import "./App.scss"
 import DiscovererPage from "./Pages/DiscovererPage/DiscovererPage";
 import PlanetPage from "./Pages/PlanetPage/PlanetPage";
+import StarPage from "./Pages/StarPage/StarPage";
 
 
 function App() {
@@ -20,10 +21,15 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/planets' element={<PlanetsPage />} />
         <Route path='/planets/:id' element={<PlanetPage />} />
+
         <Route path='/systems' element={<SystemsPage />} />
+
         <Route path='/discoverers' element={<DiscoverersPage />} />
         <Route path='/discoverers/:id' element={<DiscovererPage />} />
+
         <Route path='/stars' element={<StarsPage />} />
+        <Route path='/stars/:id' element={<StarPage />} />
+
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/galaxy' element={<GalaxyPage />} />
 

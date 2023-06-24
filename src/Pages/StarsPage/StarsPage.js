@@ -23,7 +23,7 @@ const StarsPage = () => {
         {
           stars.length > 0 ?
             stars.map(star => <StarItem key={star.id} star={star} />) :
-            <h2>No stars</h2>
+            <h2>No data</h2>
         }
       </div>
     </div>
