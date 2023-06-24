@@ -19,11 +19,11 @@ const PlanetPage = () => {
     console.log(planet)
     const { name, photos, discoverer, discovererId, system, systemId, galaxy, satellites} = planet
     const starText = system.stars.length > 1 ?"stars" : "star"
-    let satellitesText = ""
+    let satellitesText = "has no satellites"
     if (satellites.length > 1) {
-        satellitesText = `Natural satellites are ` + satellites.join(", ")
+        satellitesText = ` natural satellites are  ${satellites.join(", ")}`
     }else if (satellites.length === 1) {
-        satellitesText = `Natural satellite is ` + satellites[0]
+        satellitesText = ` natural satellite is  ${satellites[0]}`
     }
 
     return (
