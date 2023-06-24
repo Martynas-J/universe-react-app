@@ -140,7 +140,40 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
-    }
+    },
+    {
+      "id": 2,
+      "name": "Alpha Centauri",
+      "discoverer": "Thomas Henderson",
+      "system": "Alpha Centauri System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 5
+      },
+      {
+      "id": 3,
+      "name": "Betelgeuse",
+      "discoverer": "Unknown",
+      "system": "Orion",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 6
+      },
+      {
+      "id": 4,
+      "name": "Proxima Centauri",
+      "discoverer": "Robert Innes",
+      "system": "Alpha Centauri System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 7
+      }
   ],
   "photos": [
     {

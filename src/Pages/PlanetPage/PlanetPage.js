@@ -16,7 +16,7 @@ const PlanetPage = () => {
     if (!planet) {
         return ""
     }
-    console.log(planet)
+    
     const { name, photos, discoverer, discovererId, system, systemId, galaxy, satellites} = planet
     const starText = system.stars.length > 1 ?"stars" : "star"
     let satellitesText = "has no satellites"
