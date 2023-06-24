@@ -52,6 +52,23 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 4
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "discoverer": "Galileo Galilei",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": [
+        "Io",
+        "Europa",
+        "Ganymede",
+        "Callisto"
+      ],
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 3
     }
   ],
   "systems": [
@@ -71,7 +88,7 @@
         "Uranus",
         "Neptune"
       ],
-      "Stars": [
+      "stars": [
         "Sun"
       ],
       "galaxyId": 1,
