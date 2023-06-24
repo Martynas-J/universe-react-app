@@ -23,6 +23,7 @@ function App() {
         <Route path='/planets/:id' element={<PlanetPage />} />
 
         <Route path='/systems' element={<SystemsPage />} />
+        <Route path='/systems/:id' element={<SystemsPage />} />
 
         <Route path='/discoverers' element={<DiscoverersPage />} />
         <Route path='/discoverers/:id' element={<DiscovererPage />} />
