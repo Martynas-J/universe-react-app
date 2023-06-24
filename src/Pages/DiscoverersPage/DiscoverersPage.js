@@ -24,7 +24,7 @@ const DiscoverersPage = () => {
         {
           discoverers.length > 0 ?
             discoverers.map(discoverer => <DiscovererItem key={discoverer.id} discoverer={discoverer} />) :
-            <h2>No discoverers</h2>
+            <h2>No data</h2>
         }
       </div>
     </div>

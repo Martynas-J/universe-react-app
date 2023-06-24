@@ -24,7 +24,7 @@ const PlanetsPage = () => {
         {
           planets.length > 0 ?
             planets.map(planet => <PlanetItem key={planet.id} planet={planet} />) :
-            <h2>No planets</h2>
+            <h2>No data</h2>
         }
       </div>
     </div>

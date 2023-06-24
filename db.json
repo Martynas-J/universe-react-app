@@ -52,13 +52,29 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 4
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "discoverer": "Galileo Galilei",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": [
+        "Io",
+        "Europa",
+        "Ganymede",
+        "Callisto"
+      ],
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 3
     }
   ],
   "systems": [
     {
       "id": 1,
       "name": "Solar",
-      "discoverer": "Nikolai Kopernik",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "planets": [
@@ -71,11 +87,57 @@
         "Uranus",
         "Neptune"
       ],
-      "Stars": [
+      "stars": [
         "Sun"
       ],
-      "galaxyId": 1,
-      "discovererId": 2
+      "galaxyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Alpha Centauri System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": [
+        "Proxima Centauri b"
+      ],
+      "stars": [
+        "Alpha Centauri A",
+        "Alpha Centauri B",
+        "Proxima Centauri"
+      ],
+      "galaxyId": 1
+    },
+    {
+      "id": 3,
+      "name": "Kepler-452 System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": [
+        "Kepler-452b"
+      ],
+      "stars": [
+        "Kepler-452"
+      ],
+      "galaxyId": 1
+    },
+    {
+      "id": 4,
+      "name": "TRAPPIST-1 System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": [
+        "TRAPPIST-1b",
+        "TRAPPIST-1c",
+        "TRAPPIST-1d",
+        "TRAPPIST-1e",
+        "TRAPPIST-1f",
+        "TRAPPIST-1g",
+        "TRAPPIST-1h"
+      ],
+      "stars": [
+        "TRAPPIST-1"
+      ],
+      "galaxyId": 1
     }
   ],
   "discoverers": [
@@ -123,6 +185,39 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
+    },
+    {
+      "id": 2,
+      "name": "Alpha Centauri",
+      "discoverer": "Thomas Henderson",
+      "system": "Alpha Centauri System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 5
+    },
+    {
+      "id": 3,
+      "name": "Betelgeuse",
+      "discoverer": "Unknown",
+      "system": "Orion",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 6
+    },
+    {
+      "id": 4,
+      "name": "Proxima Centauri",
+      "discoverer": "Robert Innes",
+      "system": "Alpha Centauri System",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 7
     }
   ],
   "photos": [
