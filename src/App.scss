@@ -1,0 +1,34 @@
+.body {
+  .page-title {
+    text-align: center;
+  }
+  .small-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .medium-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .planets-wrapper {
+    .planet-wrapper {
+      display: flex;
+      gap: 20px;
+      .planet-item {
+        border: 1px solid black;
+      }
+    }
+  }
+  .discoverers-wrapper {
+    .discoverer-wrapper {
+      display: flex;
+      gap: 20px;
+      .discoverer-item {
+        border: 1px solid black;
+      }
+    }
+  }
+}
