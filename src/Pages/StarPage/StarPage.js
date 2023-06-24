@@ -16,7 +16,6 @@ const StarPage = () => {
     if (!star) {
         return ""
     }
-    console.log(star)
     const { name, discoverer, discovererId, system, systemId, galaxy, galaxyGroup } = star
 
     const discovererElement = discoverer ?
