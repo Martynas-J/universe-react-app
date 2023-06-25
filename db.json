@@ -204,6 +204,38 @@
       "birthplace": "Edinburgh",
       "occupation": "Astronomer",
       "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
+    },
+    {
+      "name": "Jon Doe",
+      "country": "sdbvfdq",
+      "birthplace": "dgfsg",
+      "occupation": "dsgffdsg",
+      "contribution": "fdsgfdsg",
+      "id": 10
+    },
+    {
+      "name": "qwdq",
+      "country": "qwd",
+      "birthplace": "qwd",
+      "occupation": "qwd",
+      "contribution": "qwd",
+      "id": 11
+    },
+    {
+      "name": "qwdqdqw",
+      "country": "qwdwqd",
+      "birthplace": "qwd",
+      "occupation": "qwd",
+      "contribution": "qwd",
+      "id": 12
+    },
+    {
+      "name": "kukyheqwqwwef",
+      "country": "kluilutydwqdwefw",
+      "birthplace": "qwdfew",
+      "occupation": "qwd",
+      "contribution": "qwd",
+      "id": 13
     }
   ],
   "stars": [
@@ -342,6 +374,22 @@
       "category": "planets",
       "planetId": 3,
       "id": 11
+    },
+    {
+      "name": "Jon Doe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 10,
+      "category": "discoverers",
+      "id": 12
+    },
+    {
+      "name": "qwdq",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 11,
+      "category": "discoverers",
+      "id": 13
     }
   ]
 }

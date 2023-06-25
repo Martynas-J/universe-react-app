@@ -18,6 +18,20 @@
     width: 200px;
     object-fit: cover;
   }
+  .deleteButton {
+    display: flex;
+    justify-content:right;
+    background-color: transparent;
+    color: #4c66af;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #ff0000;
+      }
+  }
   .create-link{
     color: black;
     font-weight: 700;

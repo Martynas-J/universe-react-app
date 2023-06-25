@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Formik.scss"
 import { toast } from "react-toastify";
 
-const UniversalForm = ({ inputs }) => {
+const UniversalForm = ({ inputs, onAddData }) => {
     const [formValues, setFormValues] = useState({});
     const [errors, setErrors] = useState({});
 
@@ -23,10 +23,10 @@ const UniversalForm = ({ inputs }) => {
         if (hasErrors) {
             toast.error("Empty or incorrect input", { autoClose: 5000 })
         } else {
-            toast.success("Add ")
-            setFormValues({});
-            setErrors({});
-            console.log('Form submitted:', formValues);
+            // setFormValues({});
+            // setErrors({});
+            onAddData(formValues)
+
         }
     };
 
