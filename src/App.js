@@ -37,6 +37,7 @@ function App() {
         <Route path='/gallery/:category' element={<GalleryByCategoryPage />} />
 
         <Route path='/form/:text' element={<FormPage />} />
+        <Route path='/form/:text/:id' element={<FormPage />} />
 
         <Route path='*' element={
           <div>

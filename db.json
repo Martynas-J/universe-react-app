@@ -252,14 +252,6 @@
       "occupation": "qwe",
       "contribution": "qwe",
       "id": 14
-    },
-    {
-      "name": "qwe",
-      "country": "qwe",
-      "birthplace": "qwe",
-      "occupation": "qwe",
-      "contribution": "qwe",
-      "id": 15
     }
   ],
   "stars": [
@@ -448,12 +440,31 @@
       "id": 17
     },
     {
-      "name": "qwe",
-      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
-      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
       "discovererId": 15,
       "category": "discoverers",
       "id": 18
+    },
+    {
+      "discovererId": 15,
+      "category": "discoverers",
+      "id": 19
+    },
+    {
+      "name": "f",
+      "discovererId": 15,
+      "category": "discoverers",
+      "id": 20
+    },
+    {
+      "name": "fg",
+      "discovererId": 15,
+      "category": "discoverers",
+      "id": 21
+    },
+    {
+      "discovererId": 16,
+      "category": "discoverers",
+      "id": 22
     }
   ]
 }
