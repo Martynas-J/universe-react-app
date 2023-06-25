@@ -226,42 +226,48 @@
       "name": "Sun",
       "url": "https://www.vle.lt/tmp/vle-images/84189_4.jpg",
       "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/84189_4-e8e6a8c7fc3a82834e978b2ec010d77a.jpg",
-      "starId": 1
+      "starId": 1,
+      "category": "stars"
     },
     {
       "id": 2,
       "name": "Earth",
       "url": "https://www.vle.lt/tmp/vle-images/110808_2.jpg",
       "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/110808_2-2237cd6f545cead4e35403a1fa4b17a8.jpg",
-      "planetId": 1
+      "planetId": 1,
+      "category": "planets"
     },
     {
       "id": 3,
       "name": "Thales",
       "url": "https://i.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?s=5c6aeaef32d59d28c9d0619c1c265af35861f8ab",
       "thumbnailUrl": "https://preview.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?width=640&crop=smart&auto=webp&s=2b3558a91a276aca8a9b8005c98ac6cf4582c294",
-      "discovererId": 1
+      "discovererId": 1,
+      "category": "discoverers"
     },
     {
       "id": 4,
       "name": "Nikolai Copernicus",
       "url": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
       "thumbnailUrl": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
-      "discovererId": 2
+      "discovererId": 2,
+      "category": "discoverers"
     },
     {
       "id": 5,
       "name": "Nikolai Copernicus",
       "url": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=900",
       "thumbnailUrl": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=1200",
-      "discovererId": 3
+      "discovererId": 3,
+      "category": "discoverers"
     },
     {
       "id": 6,
       "name": "Percival Lowell",
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
-      "discovererId": 4
+      "discovererId": 4,
+      "category": "discoverers"
     }
   ]
 }

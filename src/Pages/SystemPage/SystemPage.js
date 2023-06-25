@@ -16,7 +16,7 @@ const SystemPage = () => {
     if (!system) {
         return ""
     }
-    console.log(system)
+
     const { name, galaxy, galaxyGroup, planets, stars } = system
 
     let planetsText = ""

@@ -4,26 +4,20 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 
 const GalleryPage = () => {
-  const [system, setSystem] = useState('');
-  const [discoverers, setDiscoverers] = useState('');
-  const [planets, setPlanets] = useState('');
+  const [photos, setPhotos] = useState('');
 
   useEffect(() => {
-    axios.get(`${API_URL}/planets?_embed=photos`)
-      .then(res => setPlanets(res.data))
+    axios.get(`${API_URL}/photos`)
+      .then(res => setPhotos(res.data))
       .catch(res => toast.error(res.message))
-      axios.get(`${API_URL}/discoverers?_embed=photos`)
-      .then(res => setDiscoverers(res.data))
-      .catch(res => toast.error(res.message))
-
   }, [])
 
-if (!discoverers || !planets) {
+if (!photos) {
   return ""
 }
 
-console.log(discoverers)
-console.log(planets)
+console.log(photos)
+
   return (
     <div className="gallery-wrapper">
       <h1 className="page-title">Gallery</h1>
