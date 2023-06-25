@@ -224,16 +224,16 @@
     {
       "id": 1,
       "name": "Sun",
-      "url": "https://www.vle.lt/tmp/vle-images/84189_4.jpg",
-      "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/84189_4-e8e6a8c7fc3a82834e978b2ec010d77a.jpg",
+      "url": "https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/ts-space-sun-and-solar-viewing-facts-versus-fiction.jpg?itok=4ANfdnv-",
+      "thumbnailUrl": "https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/ts-space-sun-and-solar-viewing-facts-versus-fiction.jpg?itok=4ANfdnv-",
       "starId": 1,
       "category": "stars"
     },
     {
       "id": 2,
       "name": "Earth",
-      "url": "https://www.vle.lt/tmp/vle-images/110808_2.jpg",
-      "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/110808_2-2237cd6f545cead4e35403a1fa4b17a8.jpg",
+      "url": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
+      "thumbnailUrl": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
       "planetId": 1,
       "category": "planets"
     },
