@@ -260,11 +260,11 @@
       "id": 9
     },
     {
-      "name": "solar system",
-      "url": "https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=740&t=st=1687688492~exp=1687689092~hmac=d9957e8bf22be1420e839abc471ec86f971906d655c66ea37c186aebbc005522",
-      "thumbnailUrl": "https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=740&t=st=1687688492~exp=1687689092~hmac=d9957e8bf22be1420e839abc471ec86f971906d655c66ea37c186aebbc005522",
-      "category": "systems",
-      "id": 10
+      "name": "Venus",
+      "url": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "thumbnailUrl": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "category": "planets",
+      "id": 11
     }
   ]
 }

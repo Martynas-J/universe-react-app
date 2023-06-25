@@ -9,10 +9,11 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import classes from "./GalleryByCategoryPage.module.scss"
 // import Form from "../../Components/Form/Form";
 import FormItem from "../../Components/Form/FormItem";
+import Container from "../../Components/Container/Container";
 
 const GalleryByCategoryPage = () => {
 
-const {addPhotoButton, deleteButton} = classes
+    const { addPhotoButton, deleteButton } = classes
 
     const { category } = useParams();
     const [photos, setPhotos] = useState('');
@@ -59,12 +60,15 @@ const {addPhotoButton, deleteButton} = classes
     }))
 
     return (
-        <div className="gallery-category-wrapper">
-            <h1 className="page-title">{firstLetterUpperCase(category)} Gallery</h1>
-            {addPhoto ? <FormItem category={category} onAddPhoto={addPhotoHandler} /> : ""}
-            <button className={addPhotoButton} onClick={addFormHandler}>{addPhoto ? "Hide" : "Add Photo"}</button>
-            <ReactImageGallery items={images} />
-        </div>
+        <Container>
+            <div className="gallery-category-wrapper">
+                <h1 className="page-title">{firstLetterUpperCase(category)} Gallery</h1>
+                {addPhoto ? <FormItem category={category} onAddPhoto={addPhotoHandler} /> : ""}
+                <button className={addPhotoButton} onClick={addFormHandler}>{addPhoto ? "Hide" : "Add Photo"}</button>
+                <ReactImageGallery items={images} />
+            </div>
+        </Container>
+
     )
 }
 

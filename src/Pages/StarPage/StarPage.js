@@ -3,6 +3,7 @@ import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import { Link, useParams } from "react-router-dom";
+import Container from "../../Components/Container/Container";
 
 const StarPage = () => {
     const [star, setStar] = useState('');
@@ -36,15 +37,18 @@ const StarPage = () => {
     const galaxyGroupElement = galaxyGroup ? ` ${name} is located in the ${galaxyGroup} galaxy group.` : ""
 
     return (
-        <div className="star">
-            <h2 className="star-title"> {name}</h2>
-            <p>
-                {discovererElement}
-                {systemElement}
-                {galaxyElement}
-                {galaxyGroupElement}
-            </p>
-        </div>
+        <Container>
+            <div className="star">
+                <h2 className="star-title"> {name}</h2>
+                <p>
+                    {discovererElement}
+                    {systemElement}
+                    {galaxyElement}
+                    {galaxyGroupElement}
+                </p>
+            </div>
+        </Container>
+
     )
 }
 

@@ -3,6 +3,7 @@ import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import Container from "../../Components/Container/Container";
 
 const GalleryPage = () => {
   const [photos, setPhotos] = useState('');
@@ -27,48 +28,50 @@ const GalleryPage = () => {
       <Link key={star.id} to="./stars">
         <img className="medium-img" src={star.thumbnailUrl} />
       </Link>)
-    : <span>Is empty, <Link to="./stars">click here to add</Link></span>
+    : <span className="empty-text">Is empty, <Link to="./stars">click here to add</Link></span>
   const discoverersPhotosElement = discoverers.length > 0 ?
     discoverers.map(discoverer =>
       <Link key={discoverer.id} to="./discoverers" >
         <img className="medium-img" src={discoverer.thumbnailUrl} />
       </Link>)
-    : <span>Is empty, <Link to="./discoverers">click here to add</Link></span>
+    : <span className="empty-text">Is empty, <Link to="./discoverers">click here to add</Link></span>
   const planetsPhotosElement = planets.length > 0 ?
 
     planets.map(planet =>
       <Link key={planet.id} to="./planets">
         <img className="medium-img" key={planet.id} src={planet.thumbnailUrl} />
       </Link>)
-    : <span>Is empty, <Link to="./planets">click here to add</Link></span>
+    : <span className="empty-text">Is empty, <Link to="./planets">click here to add</Link></span>
 
   const systemsPhotosElement = systems.length > 0 ?
     systems.map(system =>
       <Link key={system.id} to="./systems">
         <img className="medium-img" key={system.id} src={system.thumbnailUrl} />
       </Link>)
-    : <span>Is empty, <Link to="./systems">click here to add</Link></span>
+    : <span className="empty-text">Is empty, <Link to="./systems">click here to add</Link></span>
 
   return (
-    <div className="gallery-wrapper">
-      <h1 className="page-title">Gallery</h1>
-      <div className="photos-wrapper">
-        <h2 className="photos-title">Stars</h2>
-        <div className="photos">{starsPhotosElement}</div>
+    <Container>
+      <div className="gallery-wrapper">
+        <h1 className="page-title">Gallery</h1>
+        <div className="photos-wrapper">
+          <h2 className="photos-title">Stars</h2>
+          <div className="photos">{starsPhotosElement}</div>
+        </div>
+        <div className="photos-wrapper">
+          <h2 className="photos-title">Discoverers</h2>
+          <div className="photos">{discoverersPhotosElement}</div>
+        </div>
+        <div className="photos-wrapper">
+          <h2 className="photos-title">Planets</h2>
+          <div className="photos">{planetsPhotosElement}</div>
+        </div>
+        <div className="photos-wrapper">
+          <h2 className="photos-title">Systems</h2>
+          <div className="photos">{systemsPhotosElement}</div>
+        </div>
       </div>
-      <div className="photos-wrapper">
-        <h2 className="photos-title">Discoverers</h2>
-        <div className="photos">{discoverersPhotosElement}</div>
-      </div>
-      <div className="photos-wrapper">
-        <h2 className="photos-title">Planets</h2>
-        <div className="photos">{planetsPhotosElement}</div>
-      </div>
-      <div className="photos-wrapper">
-        <h2 className="photos-title">Systems</h2>
-        <div className="photos">{systemsPhotosElement}</div>
-      </div>
-    </div>
+    </Container>
   )
 }
 

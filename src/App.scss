@@ -1,6 +1,6 @@
 .body {
   .page-title {
-    font-weight: 100;
+    font-weight: 800;
     color: rgb(79, 98, 148);
     text-align: center;
     padding-bottom: 10px;
@@ -37,6 +37,25 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+        img {
+          box-shadow: -1px 0px 11px 9px rgba(0, 0, 0, 0.664);
+        }
+        .empty-text {
+          font-weight: 600;
+          font-size: 18px;
+          color: rgb(34, 34, 49);
+          a {
+            color: rgb(34, 34, 49);
+            text-decoration: none;
+            &:hover {
+              color: rgb(119, 115, 134);
+            }
+          }
+        }
       }
     }
   }
