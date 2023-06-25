@@ -36,7 +36,7 @@ function App() {
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/gallery/:category' element={<GalleryByCategoryPage />} />
 
-        <Route path='/form' element={<FormPage />} />
+        <Route path='/form/:text' element={<FormPage />} />
 
         <Route path='*' element={
           <div>

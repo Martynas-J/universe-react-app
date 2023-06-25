@@ -13,7 +13,7 @@ import Container from "../../Components/Container/Container";
 
 const GalleryByCategoryPage = () => {
 
-    const { addPhotoButton, deleteButton } = classes
+    const { addPhotoButton } = classes
 
     const { category } = useParams();
     const [photos, setPhotos] = useState('');
@@ -56,7 +56,7 @@ const GalleryByCategoryPage = () => {
     const photosByCategory = photos.filter(photo => photo.category === category)
     photosByCategory.map(photo => images.push({
         original: photo.url, thumbnail: photo.thumbnailUrl,
-        description: <>{photo.name} <button className={deleteButton} onClick={() => deleteHandler(photo.id)}>X</button></>
+        description: <>{photo.name} <button className="deleteButton" onClick={() => deleteHandler(photo.id)}>X</button></>
     }))
 
     return (

@@ -1,76 +1,58 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+
+import "./Formik.scss"
 import { toast } from "react-toastify";
-import classes from "./Form.module.scss"
 
-const UniversalForm = ({ onAddPhoto }) => {
-    const [name, setName] = useState('');
-    const [url, setUrl] = useState('');
-    const [thumbnailUrl, setThumbnailUrl] = useState('');
-    const [nameError, setNameError] = useState(false);
-    const [urlError, setUrlError] = useState(false);
-    const [thumbnailUrlError, setThumbnailUrlError] = useState(false);
+const UniversalForm = ({ inputs, onAddData }) => {
+    const [formValues, setFormValues] = useState({});
+    const [errors, setErrors] = useState({});
 
-    const {textErr, inputErr} = classes
-    const albumId = useParams().id
-
-    const nameHandler = event => {
-        const value = event.target.value;
-        setName(value);
-        setNameError(value === "" || value[0] === " ");
-    };
-    const urlHandler = event => {
-        const value = event.target.value;
-        setUrl(value);
-        setUrlError(value === "" || value[0] === " ");
-    };
-    const thumbnailUrlHandler = event => {
-        const value = event.target.value;
-        setThumbnailUrl(value);
-        setThumbnailUrlError(value === "" || value[0] === " ");
-    };
-    const newPhotoHandler = (event) => {
-        event.preventDefault();
-        const newPhoto = {
-            albumId: Number(albumId),
-            name,
-            url,
-            thumbnailUrl
-        }
-        const returnData = onAddPhoto(newPhoto)
-        if (returnData === "name") {
-            toast.error("Name is Empty or incorrect", { autoClose: 5000 })
-            setNameError(true)
-        } else if (returnData === "url") {
-            toast.error("Url is Empty or incorrect", { autoClose: 5000 })
-            setUrlError(true)
-        } else if (returnData === "thumbnailUrl") {
-            toast.error("ThumbnailUrl is Empty or incorrect", { autoClose: 5000 })
-            setThumbnailUrlError(true)
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (!value || value[0] === ' ') {
+            setErrors((prevErrors) => ({ ...prevErrors, [name]: 'Invalid' }));
         } else {
-            toast.success("Photo Added")
-            setName("")
-            setUrl("")
-            setThumbnailUrl("")
+            setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
         }
-    }
+        setFormValues((prevValues) => ({ ...prevValues, [name]: value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const hasErrors = Object.values(errors).some((error) => error !== '');
+        if (hasErrors) {
+            toast.error("Empty or incorrect input", { autoClose: 5000 })
+        } else {
+            // setFormValues({});
+            // setErrors({});
+            onAddData(formValues)
+
+        }
+    };
 
     return (
         <div className="photo-form-wrapper">
-            <form className="photo-form" onSubmit={newPhotoHandler}>
-                <div className="form-control">
-                    <label className={`${nameError ? textErr : ""}`} htmlFor="name">Name:</label>
-                    <input className={`${nameError ? inputErr : ""}`} type="text" id="name" name="name" value={name} onChange={nameHandler} />
-                </div>
-                <div className="form-control">
-                    <label className={`${urlError ? textErr : ""}`} htmlFor="url">Url:</label>
-                    <input className={`${urlError ? inputErr : ""}`} type="url" id="url" name="url" value={url} onChange={urlHandler} />
-                </div>
-                <div className="form-control">
-                    <label className={`${thumbnailUrlError ? textErr : ""}`} htmlFor="thumbnailUrl">ThumbnailUrl:</label>
-                    <input className={`${thumbnailUrlError ? inputErr : ""}`} type="url" id="thumbnailUrl" name="thumbnailUrl" value={thumbnailUrl} onChange={thumbnailUrlHandler} />
-                </div>
-                <input type="submit" value="Add new Photo" />
+            <form onSubmit={handleSubmit}>
+                {inputs.map((input, index) => (
+                    <div key={index}>
+                        <label
+                            htmlFor={input.name}
+                            className={errors[input.name] ? 'textErr' : ''}
+                        >
+                            {input.label}:
+                        </label>
+                        <input
+                            type={input.type}
+                            name={input.name}
+                            id={input.name}
+                            onChange={handleChange}
+                            value={formValues[input.name] || ''}
+                            className={errors[input.name] ? 'inputErr' : ''}
+                        />
+                        {errors[input.name] && <div className="textErr">{errors[input.name]}</div>}
+                    </div>
+                ))}
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
