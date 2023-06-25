@@ -1,0 +1,10 @@
+.discoverers-wrapper {
+    .discoverer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}

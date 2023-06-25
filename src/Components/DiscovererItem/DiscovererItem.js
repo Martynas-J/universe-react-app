@@ -1,18 +1,18 @@
-
 import { Link } from "react-router-dom";
+import Card from "../Card/Card";
+import { HUMAN_IMG_URL } from "../Config/Config";
 
 const DiscovererItem = ({ discoverer }) => {
 
     const { name, occupation, id, photos } = discoverer
 
     return (
-        <div className="discoverer-item">
-            <Link to={`./${id}`}>
-                {photos[0] ? <img className="small-img" src={photos[0].thumbnailUrl}></img> : ""}
-                <h2 > {name}</h2>
-            </Link>
+        <Card url={`./${id}`}>
+            <img className="small-img" src={photos[0] ? photos[0].thumbnailUrl : HUMAN_IMG_URL}></img>
+            <h2 > {name}</h2>
             <span>{occupation}</span>
-        </div>
+        </Card >
+
     )
 }
 

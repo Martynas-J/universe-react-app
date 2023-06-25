@@ -147,7 +147,7 @@
       "country": "Ancient Greece",
       "birthplace": "Miletus",
       "occupation": "Philosopher and astronomer",
-      "contribution": "The first to describe the Earth as a spherical object and the idea of ​​its rotation on its axis."
+      "contribution": "The first to describe the Earth as a spherical object and the idea of its rotation on its axis."
     },
     {
       "id": 2,
@@ -172,6 +172,38 @@
       "birthplace": "Boston",
       "occupation": "Astronomer, author, and mathematician",
       "contribution": "Conducted extensive studies and observations of Mars, popularizing the idea of canals and intelligent life on the planet."
+    },
+    {
+      "id": 5,
+      "name": "Friedrich Bessel",
+      "country": "Germany",
+      "birthplace": "Minden",
+      "occupation": "Astronomer and mathematician",
+      "contribution": "Contributed to the accurate measurement of star positions and the development of celestial mechanics."
+    },
+    {
+      "id": 6,
+      "name": "Robert Hooke",
+      "country": "England",
+      "birthplace": "Freshwater",
+      "occupation": "Natural philosopher, architect, and polymath",
+      "contribution": "Made important contributions to astronomy, including the study of lunar craters and the development of the compound microscope."
+    },
+    {
+      "id": 7,
+      "name": "Johann Bayer",
+      "country": "Germany",
+      "birthplace": "Rain",
+      "occupation": "Astronomer and lawyer",
+      "contribution": "Known for his star atlas Uranometria, which cataloged over 1,000 stars and introduced the Bayer designation system for naming stars."
+    },
+    {
+      "id": 8,
+      "name": "Robert Innes",
+      "country": "Scotland",
+      "birthplace": "Edinburgh",
+      "occupation": "Astronomer",
+      "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
     }
   ],
   "stars": [
@@ -188,9 +220,9 @@
     },
     {
       "id": 2,
-      "name": "Alpha Centauri",
-      "discoverer": "Thomas Henderson",
-      "system": "Alpha Centauri System",
+      "name": "Sirius",
+      "discoverer": "Friedrich Bessel",
+      "system": "Sirius",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 2,
@@ -199,9 +231,9 @@
     },
     {
       "id": 3,
-      "name": "Betelgeuse",
-      "discoverer": "Unknown",
-      "system": "Orion",
+      "name": "Alpha Centauri",
+      "discoverer": "Robert Hooke",
+      "system": "Alpha Centauri",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 3,
@@ -210,58 +242,106 @@
     },
     {
       "id": 4,
-      "name": "Proxima Centauri",
-      "discoverer": "Robert Innes",
-      "system": "Alpha Centauri System",
+      "name": "Betelgeuse",
+      "discoverer": "Johann Bayer",
+      "system": "Orion",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "systemId": 2,
+      "systemId": 4,
       "galaxyId": 1,
       "discovererId": 7
+    },
+    {
+      "id": 5,
+      "name": "Proxima Centauri",
+      "discoverer": "Robert Innes",
+      "system": "Alpha Centauri",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 8
     }
   ],
   "photos": [
     {
       "id": 1,
       "name": "Sun",
-      "url": "https://www.vle.lt/tmp/vle-images/84189_4.jpg",
-      "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/84189_4-e8e6a8c7fc3a82834e978b2ec010d77a.jpg",
-      "starId": 1
+      "url": "https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/ts-space-sun-and-solar-viewing-facts-versus-fiction.jpg?itok=4ANfdnv-",
+      "thumbnailUrl": "https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/ts-space-sun-and-solar-viewing-facts-versus-fiction.jpg?itok=4ANfdnv-",
+      "starId": 1,
+      "category": "stars"
     },
     {
       "id": 2,
       "name": "Earth",
-      "url": "https://www.vle.lt/tmp/vle-images/110808_2.jpg",
-      "thumbnailUrl": "https://www.vle.lt/uploads/_CGSmartImage/110808_2-2237cd6f545cead4e35403a1fa4b17a8.jpg",
-      "planetId": 1
+      "url": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
+      "thumbnailUrl": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
+      "planetId": 1,
+      "category": "planets"
     },
     {
       "id": 3,
       "name": "Thales",
       "url": "https://i.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?s=5c6aeaef32d59d28c9d0619c1c265af35861f8ab",
       "thumbnailUrl": "https://preview.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?width=640&crop=smart&auto=webp&s=2b3558a91a276aca8a9b8005c98ac6cf4582c294",
-      "discovererId": 1
+      "discovererId": 1,
+      "category": "discoverers"
     },
     {
       "id": 4,
       "name": "Nikolai Copernicus",
       "url": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
       "thumbnailUrl": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
-      "discovererId": 2
+      "discovererId": 2,
+      "category": "discoverers"
     },
     {
       "id": 5,
       "name": "Nikolai Copernicus",
       "url": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=900",
       "thumbnailUrl": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=1200",
-      "discovererId": 3
+      "discovererId": 3,
+      "category": "discoverers"
     },
     {
       "id": 6,
       "name": "Percival Lowell",
       "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
-      "discovererId": 4
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "id": 7,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "id": 8,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "name": "Coud dust",
+      "url": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "thumbnailUrl": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "category": "stars",
+      "id": 9
+    },
+    {
+      "name": "Venus",
+      "url": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "thumbnailUrl": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "category": "planets",
+      "planetId": 3,
+      "id": 11
     }
   ]
 }

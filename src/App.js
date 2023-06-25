@@ -11,6 +11,8 @@ import DiscovererPage from "./Pages/DiscovererPage/DiscovererPage";
 import PlanetPage from "./Pages/PlanetPage/PlanetPage";
 import StarPage from "./Pages/StarPage/StarPage";
 import SystemPage from "./Pages/SystemPage/SystemPage";
+import GalleryByCategoryPage from "./Pages/GalleryByCategoryPage/GalleryByCategoryPage";
+import FormPage from "./Pages/FormPage/FormPage";
 
 
 function App() {
@@ -32,6 +34,9 @@ function App() {
         <Route path='/stars/:id' element={<StarPage />} />
 
         <Route path='/gallery' element={<GalleryPage />} />
+        <Route path='/gallery/:category' element={<GalleryByCategoryPage />} />
+
+        <Route path='/form' element={<FormPage />} />
 
         <Route path='*' element={
           <div>

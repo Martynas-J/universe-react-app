@@ -3,6 +3,9 @@ import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import SystemItem from "../../Components/StarItem/SystemItem/SystemItem";
+import Container from "../../Components/Container/Container";
+import "./SystemsPage.scss"
+import { Link } from "react-router-dom";
 
 const SystemsPage = () => {
   const [systems, setSystems] = useState('');
@@ -17,16 +20,20 @@ const SystemsPage = () => {
   }
 
   return (
-    <div className="systems-wrapper">
-      <h1 className="page-title">Systems</h1>
-      <div className="system-wrapper">
-        {
-          systems.length > 0 ?
-            systems.map(system => <SystemItem key={system.id} system={system} />) :
-            <h2>No data</h2>
-        }
+    <Container>
+      <div className="systems-wrapper">
+        <h1 className="page-title">Systems</h1>
+        <Link className="create-link">Create New System</Link>
+        <div className="system-wrapper">
+          {
+            systems.length > 0 ?
+              systems.map(system => <SystemItem key={system.id} system={system} />) :
+              <h2>No data</h2>
+          }
+        </div>
       </div>
-    </div>
+    </Container>
+
   )
 }
 

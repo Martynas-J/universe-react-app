@@ -3,6 +3,9 @@ import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import PlanetItem from "../../Components/PlanetItem/PlanetItem";
+import Container from "../../Components/Container/Container";
+import "./PlanetsPage.scss"
+import { Link } from "react-router-dom";
 
 const PlanetsPage = () => {
 
@@ -18,16 +21,20 @@ const PlanetsPage = () => {
   }
 
   return (
-    <div className="planets-wrapper">
-      <h1 className="page-title">Planets</h1>
-      <div className="planet-wrapper">
-        {
-          planets.length > 0 ?
-            planets.map(planet => <PlanetItem key={planet.id} planet={planet} />) :
-            <h2>No data</h2>
-        }
+    <Container>
+      <div className="planets-wrapper">
+        <h1 className="page-title">Planets</h1>
+        <Link className="create-link">Create New Planet</Link>
+        <div className="planet-wrapper">
+          {
+            planets.length > 0 ?
+              planets.map(planet => <PlanetItem key={planet.id} planet={planet} />) :
+              <h2>No data</h2>
+          }
+        </div>
       </div>
-    </div>
+    </Container>
+
   )
 }
 
