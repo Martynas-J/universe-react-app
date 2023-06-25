@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const SystemPage = () => {
     const [system, setSystem] = useState('');

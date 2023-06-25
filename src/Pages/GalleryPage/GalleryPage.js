@@ -23,48 +23,51 @@ const GalleryPage = () => {
 
 
   const starsPhotosElement = stars.length > 0 ?
-    <div className="stars-photos">
-      <h2>Stars</h2>
-      {stars.map(star =>
-        <Link key={star.id} to="./stars">
-          <img className="medium-img" src={star.thumbnailUrl}></img>
-        </Link>)}
-    </div> : ""
+    stars.map(star =>
+      <Link key={star.id} to="./stars">
+        <img className="medium-img" src={star.thumbnailUrl} />
+      </Link>)
+    : <span>Is empty, <Link to="./stars">click here to add</Link></span>
   const discoverersPhotosElement = discoverers.length > 0 ?
-    <div className="discoverers-photos">
-      <h2>Discoverers</h2>
-      {discoverers.map(discoverer =>
-        <Link key={discoverer.id} to="./discoverers" >
-          <img className="medium-img" src={discoverer.thumbnailUrl}></img>
-        </Link>)}
-    </div> : ""
+    discoverers.map(discoverer =>
+      <Link key={discoverer.id} to="./discoverers" >
+        <img className="medium-img" src={discoverer.thumbnailUrl} />
+      </Link>)
+    : <span>Is empty, <Link to="./discoverers">click here to add</Link></span>
   const planetsPhotosElement = planets.length > 0 ?
-    <div className="planets-photos">
-      <h2>Planets</h2>
-      {planets.map(planet => <Link key={planet.id} to="./planets">
-        <img className="medium-img" key={planet.id} src={planet.thumbnailUrl}></img>
-      </Link>)}
-    </div> : ""
+
+    planets.map(planet =>
+      <Link key={planet.id} to="./planets">
+        <img className="medium-img" key={planet.id} src={planet.thumbnailUrl} />
+      </Link>)
+    : <span>Is empty, <Link to="./planets">click here to add</Link></span>
+
   const systemsPhotosElement = systems.length > 0 ?
-    <div className="systems-photos">
-      <h2>Systems</h2>
-      {systems.map(system => <Link key={system.id} to="./systems">
-        <img className="medium-img" key={system.id} src={system.thumbnailUrl}></img>
-      </Link>)}
-    </div> : ""
+    systems.map(system =>
+      <Link key={system.id} to="./systems">
+        <img className="medium-img" key={system.id} src={system.thumbnailUrl} />
+      </Link>)
+    : <span>Is empty, <Link to="./systems">click here to add</Link></span>
 
   return (
     <div className="gallery-wrapper">
       <h1 className="page-title">Gallery</h1>
-      {photos.length > 0 ?
-        <>
-          {starsPhotosElement}
-          {discoverersPhotosElement}
-          {planetsPhotosElement}
-          {systemsPhotosElement}
-        </>
-        : "No Photos"}
-
+      <div className="photos-wrapper">
+        <h2 className="photos-title">Stars</h2>
+        <div className="photos">{starsPhotosElement}</div>
+      </div>
+      <div className="photos-wrapper">
+        <h2 className="photos-title">Discoverers</h2>
+        <div className="photos">{discoverersPhotosElement}</div>
+      </div>
+      <div className="photos-wrapper">
+        <h2 className="photos-title">Planets</h2>
+        <div className="photos">{planetsPhotosElement}</div>
+      </div>
+      <div className="photos-wrapper">
+        <h2 className="photos-title">Systems</h2>
+        <div className="photos">{systemsPhotosElement}</div>
+      </div>
     </div>
   )
 }

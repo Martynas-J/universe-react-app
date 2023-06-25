@@ -185,39 +185,6 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
-    },
-    {
-      "id": 2,
-      "name": "Alpha Centauri",
-      "discoverer": "Thomas Henderson",
-      "system": "Alpha Centauri System",
-      "galaxy": "Milky Way",
-      "galaxyGroup": "Local Group",
-      "systemId": 2,
-      "galaxyId": 1,
-      "discovererId": 5
-    },
-    {
-      "id": 3,
-      "name": "Betelgeuse",
-      "discoverer": "Unknown",
-      "system": "Orion",
-      "galaxy": "Milky Way",
-      "galaxyGroup": "Local Group",
-      "systemId": 3,
-      "galaxyId": 1,
-      "discovererId": 6
-    },
-    {
-      "id": 4,
-      "name": "Proxima Centauri",
-      "discoverer": "Robert Innes",
-      "system": "Alpha Centauri System",
-      "galaxy": "Milky Way",
-      "galaxyGroup": "Local Group",
-      "systemId": 2,
-      "galaxyId": 1,
-      "discovererId": 7
     }
   ],
   "photos": [
@@ -268,6 +235,36 @@
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
       "discovererId": 4,
       "category": "discoverers"
+    },
+    {
+      "id": 7,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "id": 8,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "name": "Coud dust",
+      "url": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "thumbnailUrl": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "category": "stars",
+      "id": 9
+    },
+    {
+      "name": "solar system",
+      "url": "https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=740&t=st=1687688492~exp=1687689092~hmac=d9957e8bf22be1420e839abc471ec86f971906d655c66ea37c186aebbc005522",
+      "thumbnailUrl": "https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=740&t=st=1687688492~exp=1687689092~hmac=d9957e8bf22be1420e839abc471ec86f971906d655c66ea37c186aebbc005522",
+      "category": "systems",
+      "id": 10
     }
   ]
 }

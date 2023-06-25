@@ -1,6 +1,10 @@
 .body {
   .page-title {
+    font-weight: 100;
+    color: rgb(79, 98, 148);
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
   }
   .small-img {
     height: 50px;
@@ -22,6 +26,21 @@
       }
     }
   }
+  .gallery-wrapper {
+    .photos-wrapper {
+      padding-bottom: 50px;
+      .photos-title {
+        text-align: center;
+      }
+      .photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  }
+
   .discoverers-wrapper {
     .discoverer-wrapper {
       display: flex;
