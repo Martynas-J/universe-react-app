@@ -4,6 +4,7 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import SystemItem from "../../Components/StarItem/SystemItem/SystemItem";
 import Container from "../../Components/Container/Container";
+import "./SystemsPage.scss"
 
 const SystemsPage = () => {
   const [systems, setSystems] = useState('');

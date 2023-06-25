@@ -1,9 +1,9 @@
-.stars-wrapper{
-    .star-wrapper{
+.systems-wrapper{
+    .system-wrapper{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 100px;
     }
 }

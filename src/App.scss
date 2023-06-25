@@ -17,13 +17,4 @@
     width: 200px;
     object-fit: cover;
   }
-  .planets-wrapper {
-    .planet-wrapper {
-      display: flex;
-      gap: 20px;
-      .planet-item {
-        border: 1px solid black;
-      }
-    }
-  }
 }

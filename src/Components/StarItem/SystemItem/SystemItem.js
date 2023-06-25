@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Card from "../../Card/Card";
 
 const SystemItem = ({ system }) => {
 
@@ -20,11 +21,11 @@ const SystemItem = ({ system }) => {
     }
 
     return (
-        <div className="system-item">
-            <Link to={`./${id}`}><h2 >{name}</h2></Link>
+        <Card url={`./${id}`}>
+            <h2 >{name}</h2>
             <Link to="/planets">({planets.length}<span> {planetsText}</span>)</Link>
             <Link to="/stars">({stars.length}<span> {starsText}</span>)</Link>
-        </div>
+        </Card>
     )
 }
 export default SystemItem

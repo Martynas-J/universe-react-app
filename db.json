@@ -147,7 +147,7 @@
       "country": "Ancient Greece",
       "birthplace": "Miletus",
       "occupation": "Philosopher and astronomer",
-      "contribution": "The first to describe the Earth as a spherical object and the idea of ​​its rotation on its axis."
+      "contribution": "The first to describe the Earth as a spherical object and the idea of its rotation on its axis."
     },
     {
       "id": 2,
@@ -172,6 +172,38 @@
       "birthplace": "Boston",
       "occupation": "Astronomer, author, and mathematician",
       "contribution": "Conducted extensive studies and observations of Mars, popularizing the idea of canals and intelligent life on the planet."
+    },
+    {
+      "id": 5,
+      "name": "Friedrich Bessel",
+      "country": "Germany",
+      "birthplace": "Minden",
+      "occupation": "Astronomer and mathematician",
+      "contribution": "Contributed to the accurate measurement of star positions and the development of celestial mechanics."
+    },
+    {
+      "id": 6,
+      "name": "Robert Hooke",
+      "country": "England",
+      "birthplace": "Freshwater",
+      "occupation": "Natural philosopher, architect, and polymath",
+      "contribution": "Made important contributions to astronomy, including the study of lunar craters and the development of the compound microscope."
+    },
+    {
+      "id": 7,
+      "name": "Johann Bayer",
+      "country": "Germany",
+      "birthplace": "Rain",
+      "occupation": "Astronomer and lawyer",
+      "contribution": "Known for his star atlas Uranometria, which cataloged over 1,000 stars and introduced the Bayer designation system for naming stars."
+    },
+    {
+      "id": 8,
+      "name": "Robert Innes",
+      "country": "Scotland",
+      "birthplace": "Edinburgh",
+      "occupation": "Astronomer",
+      "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
     }
   ],
   "stars": [
@@ -185,6 +217,50 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
+    },
+    {
+      "id": 2,
+      "name": "Sirius",
+      "discoverer": "Friedrich Bessel",
+      "system": "Sirius",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 5
+    },
+    {
+      "id": 3,
+      "name": "Alpha Centauri",
+      "discoverer": "Robert Hooke",
+      "system": "Alpha Centauri",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 6
+    },
+    {
+      "id": 4,
+      "name": "Betelgeuse",
+      "discoverer": "Johann Bayer",
+      "system": "Orion",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 4,
+      "galaxyId": 1,
+      "discovererId": 7
+    },
+    {
+      "id": 5,
+      "name": "Proxima Centauri",
+      "discoverer": "Robert Innes",
+      "system": "Alpha Centauri",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 8
     }
   ],
   "photos": [
