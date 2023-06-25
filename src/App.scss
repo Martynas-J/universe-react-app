@@ -18,12 +18,17 @@
     width: 200px;
     object-fit: cover;
   }
+  .card-wrapper{
+    position: relative;
+  }
   .deleteButton {
-    display: flex;
-    justify-content:right;
+    position: absolute;
+    border: 1px solid rgb(176, 176, 233);
+    border-radius: 20px;
+    top: -20px;
+    right: -20px;
     background-color: transparent;
     color: #4c66af;
-    border: none;
     cursor: pointer;
     font-size: 18px;
     transition: color 0.3s;

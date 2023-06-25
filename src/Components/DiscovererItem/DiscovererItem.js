@@ -7,12 +7,15 @@ const DiscovererItem = ({ discoverer, onDelete }) => {
     const { name, occupation, id, photos } = discoverer
 
     return (
-        <Card url={`./${id}`}>
+        <div className="card-wrapper">
+            <Card url={`./${id}`}>
+                <img className="small-img" src={photos[0] ? photos[0].thumbnailUrl : HUMAN_IMG_URL}></img>
+                <h2 > {name}</h2>
+                <span>{occupation}</span>
+            </Card >
             <button className="deleteButton" onClick={() => onDelete(discoverer.id)}> X</button>
-            <img className="small-img" src={photos[0] ? photos[0].thumbnailUrl : HUMAN_IMG_URL}></img>
-            <h2 > {name}</h2>
-            <span>{occupation}</span>
-        </Card >
+        </div>
+
 
     )
 }

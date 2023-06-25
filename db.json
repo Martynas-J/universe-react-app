@@ -206,36 +206,60 @@
       "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
     },
     {
-      "name": "Jon Doe",
-      "country": "sdbvfdq",
-      "birthplace": "dgfsg",
-      "occupation": "dsgffdsg",
-      "contribution": "fdsgfdsg",
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
+      "id": 9
+    },
+    {
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
       "id": 10
     },
     {
-      "name": "qwdq",
-      "country": "qwd",
-      "birthplace": "qwd",
-      "occupation": "qwd",
-      "contribution": "qwd",
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
       "id": 11
     },
     {
-      "name": "qwdqdqw",
-      "country": "qwdwqd",
-      "birthplace": "qwd",
-      "occupation": "qwd",
-      "contribution": "qwd",
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
       "id": 12
     },
     {
-      "name": "kukyheqwqwwef",
-      "country": "kluilutydwqdwefw",
-      "birthplace": "qwdfew",
-      "occupation": "qwd",
-      "contribution": "qwd",
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
       "id": 13
+    },
+    {
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
+      "id": 14
+    },
+    {
+      "name": "qwe",
+      "country": "qwe",
+      "birthplace": "qwe",
+      "occupation": "qwe",
+      "contribution": "qwe",
+      "id": 15
     }
   ],
   "stars": [
@@ -376,20 +400,60 @@
       "id": 11
     },
     {
-      "name": "Jon Doe",
+      "name": "qwe",
       "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
       "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
-      "discovererId": 10,
+      "discovererId": 9,
       "category": "discoverers",
       "id": 12
     },
     {
-      "name": "qwdq",
+      "name": "qwe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 10,
+      "category": "discoverers",
+      "id": 13
+    },
+    {
+      "name": "qwe",
       "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
       "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
       "discovererId": 11,
       "category": "discoverers",
-      "id": 13
+      "id": 14
+    },
+    {
+      "name": "qwe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 12,
+      "category": "discoverers",
+      "id": 15
+    },
+    {
+      "name": "qwe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 13,
+      "category": "discoverers",
+      "id": 16
+    },
+    {
+      "name": "qwe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 14,
+      "category": "discoverers",
+      "id": 17
+    },
+    {
+      "name": "qwe",
+      "url": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "thumbnailUrl": "https://formik.org/_next/image?url=%2Fimages%2Fhero6.png&w=1080&q=75",
+      "discovererId": 15,
+      "category": "discoverers",
+      "id": 18
     }
   ]
 }

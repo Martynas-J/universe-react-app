@@ -9,21 +9,24 @@ import { Link } from "react-router-dom";
 
 const DiscoverersPage = () => {
   const [discoverers, setDiscoverers] = useState('');
-  const [deleted, setDeleted] = useState(false);
 
   useEffect(() => {
     axios.get(`${API_URL}/discoverers?_embed=photos`)
       .then(res => setDiscoverers(res.data))
       .catch(res => toast.error(res.message))
   }, [])
+
   if (!discoverers) {
     return ""
   }
   const deleteHandler = (id) => {
     axios.delete(`${API_URL}/discoverers/${id}?_embed=photos`)
-      .then(res => {
-        setDeleted(true)
-        toast.info('Discoverer was deleted!');
+      .then(() => {
+        toast.info("Discoverer was deleted!")
+        setDiscoverers(prevState => {
+          let newState = [...prevState]
+          return newState.filter(((discoverer) => discoverer.id !== id))
+        })
       })
       .catch(err => {
         toast.error(err.message);
@@ -37,8 +40,8 @@ const DiscoverersPage = () => {
         <div className="discoverer-wrapper">
           {
             discoverers.length > 0 ?
-              discoverers.map(discoverer => 
-              <DiscovererItem key={discoverer.id} discoverer={discoverer} onDelete={deleteHandler} />) :
+              discoverers.map(discoverer =>
+                <DiscovererItem key={discoverer.id} discoverer={discoverer} onDelete={deleteHandler} />) :
               <h2>No data</h2>
           }
         </div>
