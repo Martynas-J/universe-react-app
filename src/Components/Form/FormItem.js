@@ -50,7 +50,7 @@ function FormItem({ category, onAddPhoto }) {
                     <input {...register("thumbnailUrl")} />
                     {errors.thumbnailUrl && <p>{errors.thumbnailUrl.message}</p>}
                 </div>
-                <input type="submit" />
+                <input type="submit" value="Add Photo" />
             </form>
 
         </div>

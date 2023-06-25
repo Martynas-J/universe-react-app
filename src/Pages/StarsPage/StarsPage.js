@@ -4,6 +4,7 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import StarItem from "../../Components/StarItem/StarItem";
 import Container from "../../Components/Container/Container";
+import "./StarsPage.scss"
 
 const StarsPage = () => {
   const [stars, setStars] = useState('');

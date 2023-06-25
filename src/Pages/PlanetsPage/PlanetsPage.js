@@ -4,6 +4,7 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import PlanetItem from "../../Components/PlanetItem/PlanetItem";
 import Container from "../../Components/Container/Container";
+import "./PlanetsPage.scss"
 
 const PlanetsPage = () => {
 

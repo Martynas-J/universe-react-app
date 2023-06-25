@@ -10,7 +10,7 @@
     height: 50px;
     width: 50px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 25px;
   }
   .medium-img {
     height: 200px;
@@ -22,49 +22,6 @@
       display: flex;
       gap: 20px;
       .planet-item {
-        border: 1px solid black;
-      }
-    }
-  }
-  .gallery-wrapper {
-    .photos-wrapper {
-      padding-bottom: 50px;
-      .photos-title {
-        text-align: center;
-      }
-      .photos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-
-        &:hover {
-          opacity: 0.8;
-        }
-        img {
-          box-shadow: -1px 0px 11px 9px rgba(0, 0, 0, 0.664);
-        }
-        .empty-text {
-          font-weight: 600;
-          font-size: 18px;
-          color: rgb(34, 34, 49);
-          a {
-            color: rgb(34, 34, 49);
-            text-decoration: none;
-            &:hover {
-              color: rgb(119, 115, 134);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .discoverers-wrapper {
-    .discoverer-wrapper {
-      display: flex;
-      gap: 20px;
-      .discoverer-item {
         border: 1px solid black;
       }
     }

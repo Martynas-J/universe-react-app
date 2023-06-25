@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import { firstLetterLowerCase } from "../../Components/Functions/Functions"
 import Container from "../../Components/Container/Container";
+import "./DiscovererPage.scss"
 
 
 const DiscovererPage = () => {

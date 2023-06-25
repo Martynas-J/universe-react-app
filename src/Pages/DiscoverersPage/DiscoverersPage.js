@@ -1,10 +1,10 @@
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import DiscovererItem from "../../Components/DiscovererItem/DiscovererItem"
 import Container from "../../Components/Container/Container";
+import "./DiscoverersPage.scss"
 
 const DiscoverersPage = () => {
   const [discoverers, setDiscoverers] = useState('');

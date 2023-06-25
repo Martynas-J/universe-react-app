@@ -4,6 +4,7 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import Container from "../../Components/Container/Container";
+import "./GalleryPage.scss"
 
 const GalleryPage = () => {
   const [photos, setPhotos] = useState('');
