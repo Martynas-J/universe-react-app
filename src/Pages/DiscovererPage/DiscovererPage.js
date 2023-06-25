@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { firstLetterLowerCase } from "../../Components/Functions/Functions"
 import Container from "../../Components/Container/Container";
 import "./DiscovererPage.scss"
@@ -25,11 +25,11 @@ const DiscovererPage = () => {
     return (
         <Container>
             <div className="discoverer">
-                {photos[0] ? <img className="medium-img" src={photos[0].url}></img> : ""}
+                {photos[0] ? <Link to="/gallery/discoverers"><img className="medium-img" src={photos[0].url}></img> </Link>: ""}
                 <h2 className="discoverer-title" > {name}</h2>
-                <span><span>Occupation: </span>{occupation}</span>
-                <span><span>Country: </span>{country}</span>
-                <span><span>Birthplace: </span>{birthplace}</span>
+                <span className="item" ><span className="bold">Occupation: </span>{occupation}</span>
+                <span className="item" ><span className="bold">Country: </span>{country}</span>
+                <span className="item" ><span className="bold">Birthplace: </span>{birthplace}</span>
                 <p>{name} {firstLetterLowerCase(contribution)}</p>
             </div>
         </Container>
