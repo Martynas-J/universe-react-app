@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../../Components/Config/Config";
+import { API_URL, PLANET_IMG_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import { Link, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
+import "./PlanetPage.scss"
 
 const PlanetPage = () => {
     const [planet, setPlanet] = useState('');
@@ -30,9 +31,9 @@ const PlanetPage = () => {
     return (
         <Container>
             <div className="planet">
-                {photos[0] ? <img className="medium-img" src={photos[0].url}></img> : ""}
+                 <Link to="/gallery/planets"><img className="medium-img" src={photos[0] ? photos[0].url : PLANET_IMG_URL}></img> </Link>
                 <h2 className="planet-title"> {name}</h2>
-                <p>
+                <p className="planet-content">
                     The scientist who made the most significant contributions to the discovery is <Link to={`/discoverers/${discovererId}`}>{discoverer.name} {discoverer.occupation}</Link>. {name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system, which is located in the {galaxy} Galaxy. {name} {satellitesText}.
                 </p>
             </div>

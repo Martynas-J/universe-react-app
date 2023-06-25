@@ -54,6 +54,7 @@ const Form = ({ onAddPhoto }) => {
             setThumbnailUrl("")
         }
     }
+    
     console.log(classes.textErr)
     return (
         <div className="photo-form-wrapper">

@@ -21,8 +21,8 @@ const SystemItem = ({ system }) => {
     }
 
     return (
-        <Card url={`./${id}`}>
-            <h2 >{name}</h2>
+        <Card>
+            <Link to={`./${id}`}><h2 >{name}</h2></Link>
             <Link to="/planets">({planets.length}<span> {planetsText}</span>)</Link>
             <Link to="/stars">({stars.length}<span> {starsText}</span>)</Link>
         </Card>

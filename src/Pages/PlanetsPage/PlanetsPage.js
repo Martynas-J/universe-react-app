@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import PlanetItem from "../../Components/PlanetItem/PlanetItem";
 import Container from "../../Components/Container/Container";
 import "./PlanetsPage.scss"
+import { Link } from "react-router-dom";
 
 const PlanetsPage = () => {
 
@@ -23,6 +24,7 @@ const PlanetsPage = () => {
     <Container>
       <div className="planets-wrapper">
         <h1 className="page-title">Planets</h1>
+        <Link className="create-link">Create New Planet</Link>
         <div className="planet-wrapper">
           {
             planets.length > 0 ?

@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import SystemItem from "../../Components/StarItem/SystemItem/SystemItem";
 import Container from "../../Components/Container/Container";
 import "./SystemsPage.scss"
+import { Link } from "react-router-dom";
 
 const SystemsPage = () => {
   const [systems, setSystems] = useState('');
@@ -22,6 +23,7 @@ const SystemsPage = () => {
     <Container>
       <div className="systems-wrapper">
         <h1 className="page-title">Systems</h1>
+        <Link className="create-link">Create New System</Link>
         <div className="system-wrapper">
           {
             systems.length > 0 ?

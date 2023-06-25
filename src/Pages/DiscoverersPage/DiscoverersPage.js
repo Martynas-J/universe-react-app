@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import DiscovererItem from "../../Components/DiscovererItem/DiscovererItem"
 import Container from "../../Components/Container/Container";
 import "./DiscoverersPage.scss"
+import { Link } from "react-router-dom";
 
 const DiscoverersPage = () => {
   const [discoverers, setDiscoverers] = useState('');
@@ -22,6 +23,7 @@ const DiscoverersPage = () => {
     <Container>
       <div className="discoverers-wrapper">
         <h1 className="page-title">Discoverers</h1>
+          <Link className="create-link">Create New Discoverer</Link>
         <div className="discoverer-wrapper">
           {
             discoverers.length > 0 ?

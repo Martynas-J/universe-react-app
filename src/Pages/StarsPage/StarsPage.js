@@ -5,12 +5,13 @@ import { toast } from "react-toastify";
 import StarItem from "../../Components/StarItem/StarItem";
 import Container from "../../Components/Container/Container";
 import "./StarsPage.scss"
+import { Link } from "react-router-dom";
 
 const StarsPage = () => {
   const [stars, setStars] = useState('');
 
   useEffect(() => {
-    axios.get(`${API_URL}/stars`)
+    axios.get(`${API_URL}/stars?_embed=photos`)
       .then(res => setStars(res.data))
       .catch(res => toast.error(res.message))
   }, [])
@@ -22,6 +23,7 @@ const StarsPage = () => {
     <Container>
       <div className="stars-wrapper">
         <h1 className="page-title">Stars</h1>
+        <Link className="create-link">Create New Star</Link>
         <div className="star-wrapper">
           {
             stars.length > 0 ?

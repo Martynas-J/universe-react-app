@@ -1,6 +1,6 @@
 
-import { Link } from "react-router-dom";
 import Card from "../Card/Card";
+import { PLANET_IMG_URL } from "../Config/Config";
 
 const PlanetItem = ({ planet }) => {
 
@@ -8,7 +8,7 @@ const PlanetItem = ({ planet }) => {
 
     return (
         <Card url={`./${id}`}>
-            {photos[0] ? <img className="medium-img" src={photos[0].thumbnailUrl}></img> : ""}
+             <img className="medium-img" src={photos[0] ? photos[0].thumbnailUrl : PLANET_IMG_URL}></img> 
             <h2 > {name}</h2>
             <span>Natural satellites ({satellites.length})</span>
         </Card>
