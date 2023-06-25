@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import classes from "./Form.module.scss"
 
-const Form = ({ onAddPhoto }) => {
+const UniversalForm = ({ onAddPhoto }) => {
     const [name, setName] = useState('');
     const [url, setUrl] = useState('');
     const [thumbnailUrl, setThumbnailUrl] = useState('');
@@ -54,8 +54,7 @@ const Form = ({ onAddPhoto }) => {
             setThumbnailUrl("")
         }
     }
-    
-    console.log(classes.textErr)
+
     return (
         <div className="photo-form-wrapper">
             <form className="photo-form" onSubmit={newPhotoHandler}>
@@ -76,4 +75,4 @@ const Form = ({ onAddPhoto }) => {
         </div>
     )
 }
-export default Form
+export default UniversalForm

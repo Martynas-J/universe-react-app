@@ -23,7 +23,7 @@ const DiscoverersPage = () => {
     <Container>
       <div className="discoverers-wrapper">
         <h1 className="page-title">Discoverers</h1>
-          <Link className="create-link">Create New Discoverer</Link>
+          <Link to = "/form" className="create-link">Create New Discoverer</Link>
         <div className="discoverer-wrapper">
           {
             discoverers.length > 0 ?
