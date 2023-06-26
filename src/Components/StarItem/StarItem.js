@@ -4,7 +4,6 @@ import { STAR_IMG_URL } from "../Config/Config";
 
 const StarItem = ({ star, onDelete}) => {
     const { name, id, system, systemId, photos } = star
-    console.log(star)
 
     return (
         <div className="card-wrapper">

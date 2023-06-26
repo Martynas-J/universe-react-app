@@ -76,19 +76,8 @@
       "name": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "planets": [
-        "Mercury",
-        "Venus",
-        "Earth",
-        "Mars",
-        "Jupiter",
-        "Saturn",
-        "Uranus",
-        "Neptune"
-      ],
-      "stars": [
-        "Sun"
-      ],
+      "planets": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune",
+      "stars": "Sun",
       "galaxyId": 1
     },
     {
@@ -96,14 +85,8 @@
       "name": "Alpha Centauri",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "planets": [
-        "Proxima Centauri b"
-      ],
-      "stars": [
-        "Alpha Centauri A",
-        "Alpha Centauri B",
-        "Proxima Centauri"
-      ],
+      "planets": "Proxima Centauri b",
+      "stars": "Alpha Centauri A, Alpha Centauri B, Proxima Centauri",
       "galaxyId": 1
     },
     {
@@ -111,12 +94,8 @@
       "name": "Kepler-452",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "planets": [
-        "Kepler-452b"
-      ],
-      "stars": [
-        "Kepler-452"
-      ],
+      "planets": "Kepler-452b",
+      "stars": "Kepler-452",
       "galaxyId": 1
     },
     {
@@ -124,19 +103,17 @@
       "name": "TRAPPIST-1",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "planets": [
-        "TRAPPIST-1b",
-        "TRAPPIST-1c",
-        "TRAPPIST-1d",
-        "TRAPPIST-1e",
-        "TRAPPIST-1f",
-        "TRAPPIST-1g",
-        "TRAPPIST-1h"
-      ],
-      "stars": [
-        "TRAPPIST-1"
-      ],
+      "planets": "TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h",
+      "stars": "TRAPPIST-1",
       "galaxyId": 1
+    },
+    {
+      "name": "new system",
+      "galaxy": "gfdhd",
+      "galaxyGroup": "mtyjtyhj",
+      "stars": "sdfsd, sgdfg",
+      "planets": "asd, dsgsd, fdgfd",
+      "id": 5
     }
   ],
   "discoverers": [

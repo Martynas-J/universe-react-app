@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import UniversalForm from "../../Components/Form/UniversalForm"
-import { API_URL, PLANET_IMG_URL } from "../../Components/Config/Config";
+import { API_URL} from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -54,7 +54,7 @@ const StarFormPage = () => {
         { type: 'text', name: 'galaxy', label: 'Galaxy', value: '', required: true },
         { type: 'text', name: 'galaxyGroup', label: 'Galaxy Group', value: '', required: true },
     ];
-    const addPlanetHandler = (data) => {
+    const addStarHandler = (data) => {
         let { name, discovererId, galaxy, galaxyGroup, systemId } = data
         discovererId = Number(discovererId)
         systemId = Number(systemId)
@@ -63,7 +63,7 @@ const StarFormPage = () => {
         if (star) {
             axios.patch(`${API_URL}/stars/${id}`, newStar)
                 .then(() => {
-                    toast.success("star was Edited");
+                    toast.success("Star was Edited");
                     setStar("");
                     navigate("/stars")
                 })
@@ -71,7 +71,7 @@ const StarFormPage = () => {
         } else {
             axios.post(`${API_URL}/stars`, newStar)
                 .then(() => {
-                    toast.success('star was added');
+                    toast.success('Star was added');
                 })
                 .catch((error) => {
                     toast.error(error.message);
@@ -84,7 +84,7 @@ const StarFormPage = () => {
                 <h1 className="page-title">Star Form</h1>
                 <UniversalForm
                     inputs={inputs}
-                    onAddData={addPlanetHandler}
+                    onAddData={addStarHandler}
                     newData={star ? star : ""}
                 />
             </div>

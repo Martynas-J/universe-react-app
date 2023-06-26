@@ -39,8 +39,8 @@ const SystemPage = () => {
             <div className="system">
                 <h2 className="system-title"> {name}</h2>
                 <ul>
-                    <li><span>{planetsText}</span>{planets.length > 0 ? planets.join(", ") : ""}</li>
-                    <li><span>{starsText}</span>{stars.length > 0 ? stars.join(", ") : ""}</li>
+                    <li><span>{planetsText}</span>{planets}</li>
+                    <li><span>{starsText}</span>{stars}</li>
                     <li><span>Galaxy: </span>{galaxy ? galaxy : ""}</li>
                     <li><span>Galaxy Group: </span>{galaxyGroup ? galaxyGroup : ""}</li>
                 </ul>

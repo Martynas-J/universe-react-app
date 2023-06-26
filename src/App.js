@@ -15,6 +15,7 @@ import GalleryByCategoryPage from "./Pages/GalleryByCategoryPage/GalleryByCatego
 import DiscovererFormPage from "./Pages/DiscovererFormPage/DiscovererFormPage";
 import PlanetFormPage from "./Pages/PlanetFormPage/PlanetFormPage";
 import StarFormPage from "./Pages/StarFormPage/StarFormPage";
+import SystemFormPage from "./Pages/SystemFormPage/SystemFormPage";
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
 
         <Route path='/form/star' element={<StarFormPage />} />
         <Route path='/form/star/:id' element={<StarFormPage />} />
+
+        <Route path='/form/system' element={<SystemFormPage />} />
+        <Route path='/form/system/:id' element={<SystemFormPage />} />
 
         <Route path='*' element={
           <div>

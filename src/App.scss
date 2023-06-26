@@ -30,7 +30,7 @@ body {
       border-radius: 20px;
       top: -20px;
       right: -20px;
-      background-color: transparent;
+      background-color:rgba(172, 172, 228, 0.158);
       color: #4c66af;
       cursor: pointer;
       font-size: 18px;
@@ -38,6 +38,7 @@ body {
 
       &:hover {
         color: #ff0000;
+        background-color:rgba(172, 172, 228, 0.589);
       }
     }
     .create-link {

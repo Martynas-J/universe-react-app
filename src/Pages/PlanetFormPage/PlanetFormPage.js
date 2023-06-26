@@ -54,7 +54,7 @@ const PlanetFormPage = () => {
 
   const inputs = [
     { type: 'text', name: 'name', label: 'Name', value: '', required: true },
-    { type: 'text', name: 'satellites', label: 'Satellites', value: '', required: false},
+    { type: 'text', name: 'satellites', label: 'Satellites (for example sat1, sat2)', value: '', required: false},
     { type: 'url', name: 'url', label: 'Photo URL', value: '', required: true },
     { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: true },
     { type: 'select', name: 'systemId', label: 'System', options: allSystems, value: '', required: true },
