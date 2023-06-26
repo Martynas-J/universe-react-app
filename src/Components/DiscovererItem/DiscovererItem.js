@@ -15,8 +15,6 @@ const DiscovererItem = ({ discoverer, onDelete }) => {
             </Card >
             <button className="deleteButton" onClick={() => onDelete(discoverer.id)}> X</button>
         </div>
-
-
     )
 }
 

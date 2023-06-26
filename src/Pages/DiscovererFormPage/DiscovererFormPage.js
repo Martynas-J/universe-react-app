@@ -7,7 +7,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 
-const FormPage = () => {
+const DiscovererFormPage = () => {
     const { text, id } = useParams()
     const navigate = useNavigate();
     const [discoverer, setDiscoverer] = useState('');
@@ -92,4 +92,4 @@ const FormPage = () => {
     )
 }
 
-export default FormPage
+export default DiscovererFormPage

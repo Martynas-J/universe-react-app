@@ -15,7 +15,6 @@ const UniversalForm = ({ inputs, onAddData, discovererData }) => {
             Object.keys(discovererData).forEach((key) => {
                 setFormValues((prevValues) => ({ ...prevValues, [key]: discovererData[key] }));
             });
-            console.log(formValues)
         }
     }, [discovererData]);
     const handleChange = (e) => {

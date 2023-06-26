@@ -18,7 +18,19 @@ const StarsPage = () => {
   if (!stars) {
     return ""
   }
-
+  const deleteHandler = (id) => {
+    axios.delete(`${API_URL}/stars/${id}?_embed=photos`)
+      .then(() => {
+        toast.info("Star was deleted!")
+        setStars(prevState => {
+          let newState = [...prevState]
+          return newState.filter(((star) => star.id !== id))
+        })
+      })
+      .catch(err => {
+        toast.error(err.message);
+      });
+  }
   return (
     <Container>
       <div className="stars-wrapper">
@@ -27,7 +39,7 @@ const StarsPage = () => {
         <div className="star-wrapper">
           {
             stars.length > 0 ?
-              stars.map(star => <StarItem key={star.id} star={star} />) :
+              stars.map(star => <StarItem key={star.id} star={star} onDelete={deleteHandler} />) :
               <h2>No data</h2>
           }
         </div>

@@ -18,7 +18,19 @@ const SystemsPage = () => {
   if (!systems) {
     return ""
   }
-
+  const deleteHandler = (id) => {
+    axios.delete(`${API_URL}/systems/${id}?_embed=photos`)
+      .then(() => {
+        toast.info("System was deleted!")
+        setSystems(prevState => {
+          let newState = [...prevState]
+          return newState.filter(((system) => system.id !== id))
+        })
+      })
+      .catch(err => {
+        toast.error(err.message);
+      });
+  }
   return (
     <Container>
       <div className="systems-wrapper">
@@ -27,7 +39,7 @@ const SystemsPage = () => {
         <div className="system-wrapper">
           {
             systems.length > 0 ?
-              systems.map(system => <SystemItem key={system.id} system={system} />) :
+              systems.map(system => <SystemItem key={system.id} system={system} onDelete={deleteHandler} />) :
               <h2>No data</h2>
           }
         </div>

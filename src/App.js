@@ -12,7 +12,7 @@ import PlanetPage from "./Pages/PlanetPage/PlanetPage";
 import StarPage from "./Pages/StarPage/StarPage";
 import SystemPage from "./Pages/SystemPage/SystemPage";
 import GalleryByCategoryPage from "./Pages/GalleryByCategoryPage/GalleryByCategoryPage";
-import FormPage from "./Pages/FormPage/FormPage";
+import DiscovererFormPage from "./Pages/DiscovererFormPage/DiscovererFormPage";
 
 
 function App() {
@@ -36,8 +36,8 @@ function App() {
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/gallery/:category' element={<GalleryByCategoryPage />} />
 
-        <Route path='/form/:text' element={<FormPage />} />
-        <Route path='/form/:text/:id' element={<FormPage />} />
+        <Route path='/form/:text' element={<DiscovererFormPage />} />
+        <Route path='/form/:text/:id' element={<DiscovererFormPage />} />
 
         <Route path='*' element={
           <div>

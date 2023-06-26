@@ -4,6 +4,7 @@ import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import { Link, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
+import "./StarPage.scss"
 
 const StarPage = () => {
     const [star, setStar] = useState('');
