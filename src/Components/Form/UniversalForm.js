@@ -3,20 +3,20 @@ import { useEffect, useState } from "react";
 import "./Formik.scss"
 import { toast } from "react-toastify";
 
-const UniversalForm = ({ inputs, onAddData, discovererData }) => {
+const UniversalForm = ({ inputs, onAddData, newData }) => {
     const [formValues, setFormValues] = useState({});
     const [errors, setErrors] = useState({});
     const [buttonText, setButtonText] = useState("Add");
 
 
     useEffect(() => {
-        if (discovererData) {
+        if (newData) {
             setButtonText("Save")
-            Object.keys(discovererData).forEach((key) => {
-                setFormValues((prevValues) => ({ ...prevValues, [key]: discovererData[key] }));
+            Object.keys(newData).forEach((key) => {
+                setFormValues((prevValues) => ({ ...prevValues, [key]: newData[key] }));
             });
         }
-    }, [discovererData]);
+    }, [newData]);
     const handleChange = (e) => {
         const { name, value } = e.target;
         if (!value || value[0] === ' ') {

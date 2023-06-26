@@ -7,9 +7,7 @@
       "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "satellites": [
-        "Moon"
-      ],
+      "satellites": "Moon",
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 1
@@ -21,7 +19,7 @@
       "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "satellites": [],
+      "satellites": "",
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 2
@@ -33,7 +31,7 @@
       "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "satellites": [],
+      "satellites": "",
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
@@ -45,10 +43,7 @@
       "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "satellites": [
-        "Phobos",
-        "Deimos"
-      ],
+      "satellites": "Phobos, Deimos",
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 4
@@ -60,24 +55,17 @@
       "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
-      "satellites": [
-        "Io",
-        "Europa",
-        "Ganymede",
-        "Callisto"
-      ],
+      "satellites": "Io, Europa, Ganymede, Callisto",
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
     },
     {
-      "name": "werwer",
+      "name": "B12",
       "discovererId": 2,
       "galaxy": "erg",
       "galaxyGroup": "ergerg",
-      "satellites": [
-        "werwe werwerwer werwerwer"
-      ],
+      "satellites": "cales, ASFERG",
       "systemId": 2,
       "id": 6
     }
@@ -368,12 +356,20 @@
       "id": 29
     },
     {
-      "name": "werwer",
+      "name": "B12",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMpWyALbV453VEdRjyMgusmgnFzovKoBP3Q&usqp=CAU",
       "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMpWyALbV453VEdRjyMgusmgnFzovKoBP3Q&usqp=CAU",
       "planetId": 6,
       "category": "planets",
       "id": 30
+    },
+    {
+      "name": "Mercury",
+      "url": "https://babeled.com/img/pages/4871.png",
+      "thumbnailUrl": "https://babeled.com/img/pages/4871.png",
+      "planetId": 2,
+      "category": "planets",
+      "id": 31
     }
   ]
 }

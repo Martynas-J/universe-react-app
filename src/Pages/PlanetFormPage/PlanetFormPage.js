@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import UniversalForm from "../../Components/Form/UniversalForm"
-import { API_URL, HUMAN_IMG_URL } from "../../Components/Config/Config";
+import { API_URL, PLANET_IMG_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -18,20 +18,44 @@ const PlanetFormPage = () => {
     axios.get(`${API_URL}/systems`)
       .then(res => setSystems(res.data))
       .catch(res => toast.error(res.message))
+
     axios.get(`${API_URL}/discoverers`)
       .then(res => setDiscoverers(res.data))
       .catch(res => toast.error(res.message))
+
+    if (id) {
+      axios.get(`${API_URL}/planets/${id}?_embed=photos`)
+        .then(res => {
+          let { name, discovererId, galaxy, galaxyGroup, satellites, photos, id, systemId } = res.data
+          const newData = {
+            name,
+            discovererId,
+            galaxy,
+            galaxyGroup,
+            satellites,
+            systemId,
+            url: photos.length > 0 ? photos[0].url : PLANET_IMG_URL,
+            thumbnailUrl: photos.length > 0 ? photos[0].thumbnailUrl : PLANET_IMG_URL,
+            id,
+            photoId: photos.length > 0 ? photos[0].id : '',
+          }
+          return setPlanet(newData)
+        })
+        .catch(res => toast.error(res.message))
+    }
   }, [])
+
   if (!systems || !discoverers) {
     return ""
   }
+
   const allSystems = systems.map(item => ({ id: item.id, name: item.name }))
   const allDiscoverers = discoverers.map(item => ({ id: item.id, name: item.name }))
 
 
   const inputs = [
     { type: 'text', name: 'name', label: 'Name', value: '', required: true },
-    { type: 'text', name: 'satellites', label: 'Satellites', value: '', required: true },
+    { type: 'text', name: 'satellites', label: 'Satellites', value: '', required: false},
     { type: 'url', name: 'url', label: 'Photo URL', value: '', required: true },
     { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: true },
     { type: 'select', name: 'systemId', label: 'System', options: allSystems, value: '', required: true },
@@ -44,8 +68,7 @@ const PlanetFormPage = () => {
     let { name, discovererId, galaxy, galaxyGroup, satellites, url, thumbnailUrl, photoId, systemId } = data
     discovererId = Number(discovererId)
     systemId = Number(systemId)
-    satellites = satellites.split(",")
-    const newPlanet = { name, discovererId, galaxy, galaxyGroup, satellites, systemId}
+    const newPlanet = { name, discovererId, galaxy, galaxyGroup, satellites, systemId }
 
     if (planet) {
       axios
@@ -87,7 +110,7 @@ const PlanetFormPage = () => {
         <UniversalForm
           inputs={inputs}
           onAddData={addPlanetHandler}
-        planetData={planet ? planet : ""}
+          newData={planet ? planet : ""}
         />
       </div>
     </Container>
