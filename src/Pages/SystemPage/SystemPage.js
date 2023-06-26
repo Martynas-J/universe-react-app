@@ -39,12 +39,12 @@ const SystemPage = () => {
             <div className="system">
                 <h2 className="system-title"> {name}</h2>
                 <ul>
-                    <li><span>{planetsText}</span>{planets}</li>
-                    <li><span>{starsText}</span>{stars}</li>
-                    <li><span>Galaxy: </span>{galaxy ? galaxy : ""}</li>
-                    <li><span>Galaxy Group: </span>{galaxyGroup ? galaxyGroup : ""}</li>
+                    <li><span className="bold">{planetsText}</span>{planets}</li>
+                    <li><span className="bold">{starsText}</span>{stars}</li>
+                    <li><span className="bold">Galaxy: </span>{galaxy ? galaxy : ""}</li>
+                    <li><span className="bold">Galaxy Group: </span>{galaxyGroup ? galaxyGroup : ""}</li>
                 </ul>
-                <Link to={`/form/system/${id}`} className="create-link">Edit Star</Link>
+                <Link to={`/form/system/${id}`} className="create-link">Edit System</Link>
             </div>
         </Container>
 

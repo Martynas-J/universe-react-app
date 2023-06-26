@@ -11,6 +11,9 @@ body {
       border-bottom: 1px solid rgb(79, 98, 148);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
     }
+    .bold {
+      font-weight: 700;
+    }
     .small-img {
       height: 50px;
       width: 50px;
@@ -28,7 +31,7 @@ body {
       border-radius: 20px;
       top: -20px;
       right: -20px;
-      background-color:rgba(172, 172, 228, 0.158);
+      background-color: rgba(172, 172, 228, 0.158);
       color: #4c66af;
       cursor: pointer;
       font-size: 18px;
@@ -36,7 +39,7 @@ body {
 
       &:hover {
         color: #ff0000;
-        background-color:rgba(172, 172, 228, 0.589);
+        background-color: rgba(172, 172, 228, 0.589);
       }
     }
     .create-link {
@@ -54,10 +57,9 @@ body {
         color: rgb(73, 90, 146);
         box-shadow: inset 0 0 14px 0px black, 0 0 14px 0px black;
       }
-      @include responsive.mob800{
-        margin-left:0;
-        
-    }
+      @include responsive.mob800 {
+        margin-left: 0;
+      }
     }
   }
 }
