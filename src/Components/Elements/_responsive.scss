@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin mob800 {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
 @mixin mob640 {
     @media screen and (max-width: 640px) {
         @content;
