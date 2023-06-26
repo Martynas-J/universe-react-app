@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
 
 const SystemPage = () => {
@@ -44,6 +44,7 @@ const SystemPage = () => {
                     <li><span>Galaxy: </span>{galaxy ? galaxy : ""}</li>
                     <li><span>Galaxy Group: </span>{galaxyGroup ? galaxyGroup : ""}</li>
                 </ul>
+                <Link to={`/form/system/${id}`} className="create-link">Edit Star</Link>
             </div>
         </Container>
 

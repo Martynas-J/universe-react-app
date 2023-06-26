@@ -109,10 +109,10 @@
     },
     {
       "name": "new system",
-      "galaxy": "gfdhd",
-      "galaxyGroup": "mtyjtyhj",
-      "stars": "sdfsd, sgdfg",
-      "planets": "asd, dsgsd, fdgfd",
+      "galaxy": "gfdhdrth",
+      "galaxyGroup": "mtyjtyhjgt",
+      "stars": "sdfsd, sgdfght, tytyuty",
+      "planets": "asd, dsgsd, fdgfd, yujyujyuy",
       "id": 5
     }
   ],
@@ -359,14 +359,6 @@
       "planetId": 6,
       "category": "planets",
       "id": 30
-    },
-    {
-      "name": "Mercury",
-      "url": "https://babeled.com/img/pages/4871.png",
-      "thumbnailUrl": "https://babeled.com/img/pages/4871.png",
-      "planetId": 2,
-      "category": "planets",
-      "id": 31
     }
   ]
 }
