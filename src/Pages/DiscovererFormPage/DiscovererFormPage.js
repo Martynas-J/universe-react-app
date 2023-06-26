@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const DiscovererFormPage = () => {
-    const { text, id } = useParams()
+    const {id } = useParams()
     const navigate = useNavigate();
     const [discoverer, setDiscoverer] = useState('');
 
@@ -81,7 +81,7 @@ const DiscovererFormPage = () => {
     return (
         <Container>
             <div className="form-wrapper">
-                <h1 className="page-title">{text} Form</h1>
+                <h1 className="page-title">Discoverer Form</h1>
                 <UniversalForm
                     inputs={inputs}
                     onAddData={addDiscovererHandler}

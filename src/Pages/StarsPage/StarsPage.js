@@ -35,7 +35,7 @@ const StarsPage = () => {
     <Container>
       <div className="stars-wrapper">
         <h1 className="page-title">Stars</h1>
-        <Link className="create-link">Create New Star</Link>
+        <Link className="create-link">Add New Star</Link>
         <div className="star-wrapper">
           {
             stars.length > 0 ?
