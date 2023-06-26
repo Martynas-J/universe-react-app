@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const DiscovererFormPage = () => {
-    const { text, id } = useParams()
+    const {id } = useParams()
     const navigate = useNavigate();
     const [discoverer, setDiscoverer] = useState('');
 
@@ -33,6 +33,7 @@ const DiscovererFormPage = () => {
                 .catch(res => toast.error(res.message))
         }
     }, [])
+
     const inputs = [
         { type: 'text', name: 'name', label: 'Name', value: '', required: true },
         { type: 'text', name: 'country', label: 'Country', value: '', required: true },
@@ -42,6 +43,7 @@ const DiscovererFormPage = () => {
         { type: 'url', name: 'url', label: 'Photo URL', value: '', required: true },
         { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: true },
     ];
+
     const addDiscovererHandler = (data) => {
         const { name, country, birthplace, occupation, contribution, url, thumbnailUrl, photoId } = data
         const newDiscoverer = { name, country, birthplace, occupation, contribution }
@@ -81,11 +83,11 @@ const DiscovererFormPage = () => {
     return (
         <Container>
             <div className="form-wrapper">
-                <h1 className="page-title">{text} Form</h1>
+                <h1 className="page-title">Discoverer Form</h1>
                 <UniversalForm
                     inputs={inputs}
                     onAddData={addDiscovererHandler}
-                    discovererData={discoverer ? discoverer : ""}
+                    newData={discoverer ? discoverer : ""}
                 />
             </div>
         </Container>

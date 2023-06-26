@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container";
 
 const SystemPage = () => {
@@ -39,11 +39,12 @@ const SystemPage = () => {
             <div className="system">
                 <h2 className="system-title"> {name}</h2>
                 <ul>
-                    <li><span>{planetsText}</span>{planets.length > 0 ? planets.join(", ") : ""}</li>
-                    <li><span>{starsText}</span>{stars.length > 0 ? stars.join(", ") : ""}</li>
+                    <li><span>{planetsText}</span>{planets}</li>
+                    <li><span>{starsText}</span>{stars}</li>
                     <li><span>Galaxy: </span>{galaxy ? galaxy : ""}</li>
                     <li><span>Galaxy Group: </span>{galaxyGroup ? galaxyGroup : ""}</li>
                 </ul>
+                <Link to={`/form/system/${id}`} className="create-link">Edit Star</Link>
             </div>
         </Container>
 

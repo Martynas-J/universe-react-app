@@ -3,20 +3,20 @@ import { useEffect, useState } from "react";
 import "./Formik.scss"
 import { toast } from "react-toastify";
 
-const UniversalForm = ({ inputs, onAddData, discovererData }) => {
+const UniversalForm = ({ inputs, onAddData, newData }) => {
     const [formValues, setFormValues] = useState({});
     const [errors, setErrors] = useState({});
     const [buttonText, setButtonText] = useState("Add");
 
 
     useEffect(() => {
-        if (discovererData) {
+        if (newData) {
             setButtonText("Save")
-            Object.keys(discovererData).forEach((key) => {
-                setFormValues((prevValues) => ({ ...prevValues, [key]: discovererData[key] }));
+            Object.keys(newData).forEach((key) => {
+                setFormValues((prevValues) => ({ ...prevValues, [key]: newData[key] }));
             });
         }
-    }, [discovererData]);
+    }, [newData]);
     const handleChange = (e) => {
         const { name, value } = e.target;
         if (!value || value[0] === ' ') {
@@ -36,36 +36,55 @@ const UniversalForm = ({ inputs, onAddData, discovererData }) => {
             setFormValues({});
             setErrors({});
             onAddData(formValues)
-
         }
     };
 
     return (
         <div className="photo-form-wrapper">
             <form onSubmit={handleSubmit}>
-                {inputs.map((input, index) => (
-                    <div key={index}>
-                        <label
-                            htmlFor={input.name}
-                            className={errors[input.name] ? 'textErr' : ''}
-                        >
-                            {input.label}:
-                        </label>
-                        <input
-                            type={input.type}
-                            name={input.name}
-                            id={input.name}
-                            onChange={handleChange}
-                            value={formValues[input.name] || ''}
-                            required={input.required}
-                            className={errors[input.name] ? 'inputErr' : ''}
-                        />
-                        {errors[input.name] && <div className="textErr">{errors[input.name]}</div>}
-                    </div>
-                ))}
+                {inputs.map((input, index) => {
+                    const { type, name, label, options, required } = input;
+                    return (
+                        <div key={index}>
+                            <label htmlFor={name} className={errors[name] ? "textErr" : ""}>
+                                {label}:
+                            </label>
+                            {type === "select" ? (
+                                <select
+                                    name={name}
+                                    id={name}
+                                    onChange={handleChange}
+                                    value={formValues[name] || ""}
+                                    required={required}
+                                    className={errors[name] ? "inputErr" : ""}
+                                >
+                                    <option value="">Choose...</option>
+                                    {options.map((option, optionIndex) => (
+                                        <option key={optionIndex} value={option.id}>
+                                            {option.name}
+                                        </option>
+                                    ))}
+                                </select>
+                            ) : (
+                                <input
+                                    type={type}
+                                    name={name}
+                                    id={name}
+                                    onChange={handleChange}
+                                    value={formValues[name] || ""}
+                                    required={required}
+                                    className={errors[name] ? "inputErr" : ""}
+                                />
+                            )}
+                            {errors[name] && (
+                                <div className="textErr">{errors[name]}</div>
+                            )}
+                        </div>
+                    );
+                })}
                 <button type="submit">{buttonText}</button>
             </form>
         </div>
-    )
-}
+    );
+};
 export default UniversalForm

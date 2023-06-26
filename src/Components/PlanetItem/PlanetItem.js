@@ -11,7 +11,7 @@ const PlanetItem = ({ planet, onDelete }) => {
             <Card url={`./${id}`}>
                 <img className="medium-img" src={photos[0] ? photos[0].thumbnailUrl : PLANET_IMG_URL}></img>
                 <h2 > {name}</h2>
-                <span>Natural satellites ({satellites.length})</span>
+                <span>Natural satellites ({satellites.length > 0 ? satellites.split(",").length : 0 })</span>
             </Card>
             <button className="deleteButton" onClick={() => onDelete(planet.id)}> X</button>
         </div >

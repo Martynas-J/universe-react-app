@@ -12,7 +12,7 @@ const PlanetsPage = () => {
   const [planets, setPlanets] = useState('');
 
   useEffect(() => {
-    axios.get(`${API_URL}/planets?_embed=photos`)
+    axios.get(`${API_URL}/planets?_expand=system&_embed=photos`)
       .then(res => setPlanets(res.data))
       .catch(res => toast.error(res.message))
   }, [])
@@ -36,7 +36,7 @@ const PlanetsPage = () => {
     <Container>
       <div className="planets-wrapper">
         <h1 className="page-title">Planets</h1>
-        <Link className="create-link">Create New Planet</Link>
+        <Link to="/form/planet" className="create-link">Add New Planet</Link>
         <div className="planet-wrapper">
           {
             planets.length > 0 ?

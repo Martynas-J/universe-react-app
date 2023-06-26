@@ -11,7 +11,7 @@ const StarsPage = () => {
   const [stars, setStars] = useState('');
 
   useEffect(() => {
-    axios.get(`${API_URL}/stars?_embed=photos`)
+    axios.get(`${API_URL}/stars?_expand=system&_embed=photos`)
       .then(res => setStars(res.data))
       .catch(res => toast.error(res.message))
   }, [])
@@ -35,7 +35,7 @@ const StarsPage = () => {
     <Container>
       <div className="stars-wrapper">
         <h1 className="page-title">Stars</h1>
-        <Link className="create-link">Create New Star</Link>
+        <Link to="/form/star" className="create-link">Add New Star</Link>
         <div className="star-wrapper">
           {
             stars.length > 0 ?
