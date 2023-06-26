@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Card from "../../Card/Card";
 
-const SystemItem = ({ system }) => {
+const SystemItem = ({ system, onDelete  }) => {
 
-    const { name, id, planets, stars } = system
+    const { name, id, planets, stars} = system
 
     let planetsText = ""
     let starsText = ""
@@ -21,11 +21,14 @@ const SystemItem = ({ system }) => {
     }
 
     return (
-        <Card>
-            <Link to={`./${id}`}><h2 >{name}</h2></Link>
-            <Link to="/planets">({planets.length}<span> {planetsText}</span>)</Link>
-            <Link to="/stars">({stars.length}<span> {starsText}</span>)</Link>
-        </Card>
+        <div className="card-wrapper">
+            <Card>
+                <Link to={`./${id}`}><h2 >{name}</h2></Link>
+                <Link to="/planets">({planets.length}<span> {planetsText}</span>)</Link>
+                <Link to="/stars">({stars.length}<span> {starsText}</span>)</Link>
+            </Card>
+            <button className="deleteButton" onClick={() => onDelete(system.id)}> X</button>
+        </div>
     )
 }
 export default SystemItem

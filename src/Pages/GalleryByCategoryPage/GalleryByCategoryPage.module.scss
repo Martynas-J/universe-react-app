@@ -15,3 +15,15 @@
         color: #0e101c;
     }
 }
+.deleteButton {
+    background-color: transparent;
+    color: #4c66af;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #ff0000;
+      }
+  }

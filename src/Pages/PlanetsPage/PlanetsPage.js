@@ -19,7 +19,19 @@ const PlanetsPage = () => {
   if (!planets) {
     return ""
   }
-
+  const deleteHandler = (id) => {
+    axios.delete(`${API_URL}/planets/${id}?_embed=photos`)
+      .then(() => {
+        toast.info("Planet was deleted!")
+        setPlanets(prevState => {
+          let newState = [...prevState]
+          return newState.filter(((planet) => planet.id !== id))
+        })
+      })
+      .catch(err => {
+        toast.error(err.message);
+      });
+  }
   return (
     <Container>
       <div className="planets-wrapper">
@@ -28,7 +40,7 @@ const PlanetsPage = () => {
         <div className="planet-wrapper">
           {
             planets.length > 0 ?
-              planets.map(planet => <PlanetItem key={planet.id} planet={planet} />) :
+              planets.map(planet => <PlanetItem key={planet.id} onDelete={deleteHandler} planet={planet} />) :
               <h2>No data</h2>
           }
         </div>
