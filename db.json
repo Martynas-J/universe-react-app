@@ -66,7 +66,7 @@
       "galaxy": "erg",
       "galaxyGroup": "ergerg",
       "satellites": "cales, ASFERG",
-      "systemId": 2,
+      "systemId": 4,
       "id": 6
     }
   ],
@@ -93,7 +93,7 @@
     },
     {
       "id": 2,
-      "name": "Alpha Centauri System",
+      "name": "Alpha Centauri",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "planets": [
@@ -108,7 +108,7 @@
     },
     {
       "id": 3,
-      "name": "Kepler-452 System",
+      "name": "Kepler-452",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "planets": [
@@ -121,7 +121,7 @@
     },
     {
       "id": 4,
-      "name": "TRAPPIST-1 System",
+      "name": "TRAPPIST-1",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "planets": [
@@ -218,7 +218,6 @@
       "id": 1,
       "name": "Sun",
       "discoverer": "Galileo Galilei",
-      "system": "Solar",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 1,
@@ -229,7 +228,6 @@
       "id": 2,
       "name": "Sirius",
       "discoverer": "Friedrich Bessel",
-      "system": "Sirius",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 2,
@@ -240,7 +238,6 @@
       "id": 3,
       "name": "Alpha Centauri",
       "discoverer": "Robert Hooke",
-      "system": "Alpha Centauri",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 3,
@@ -251,12 +248,35 @@
       "id": 5,
       "name": "Proxima Centauri",
       "discoverer": "Robert Innes",
-      "system": "Alpha Centauri",
       "galaxy": "Milky Way",
       "galaxyGroup": "Local Group",
       "systemId": 3,
       "galaxyId": 1,
       "discovererId": 8
+    },
+    {
+      "name": "sssssssssss",
+      "discovererId": 3,
+      "galaxy": "berb",
+      "galaxyGroup": "erbbre",
+      "systemId": 2,
+      "id": 6
+    },
+    {
+      "name": "hr",
+      "discovererId": 4,
+      "galaxy": "rth",
+      "galaxyGroup": "rth",
+      "systemId": 3,
+      "id": 7
+    },
+    {
+      "name": "alfa",
+      "discovererId": 6,
+      "galaxy": "erger",
+      "galaxyGroup": "ernjtretr",
+      "systemId": 1,
+      "id": 8
     }
   ],
   "photos": [

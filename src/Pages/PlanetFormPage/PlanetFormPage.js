@@ -52,7 +52,6 @@ const PlanetFormPage = () => {
   const allSystems = systems.map(item => ({ id: item.id, name: item.name }))
   const allDiscoverers = discoverers.map(item => ({ id: item.id, name: item.name }))
 
-
   const inputs = [
     { type: 'text', name: 'name', label: 'Name', value: '', required: true },
     { type: 'text', name: 'satellites', label: 'Satellites', value: '', required: false},
@@ -72,7 +71,7 @@ const PlanetFormPage = () => {
 
     if (planet) {
       axios
-        .patch(`${API_URL}/planets/${planet.id}`, newPlanet)
+        .patch(`${API_URL}/planets/${id}`, newPlanet)
         .then((response) => {
           const planetId = response.data.id;
           const photoData = { name, url, thumbnailUrl, planetId, category: "planets" };

@@ -12,7 +12,7 @@ const PlanetsPage = () => {
   const [planets, setPlanets] = useState('');
 
   useEffect(() => {
-    axios.get(`${API_URL}/planets?_embed=photos`)
+    axios.get(`${API_URL}/planets?_expand=system&_embed=photos`)
       .then(res => setPlanets(res.data))
       .catch(res => toast.error(res.message))
   }, [])

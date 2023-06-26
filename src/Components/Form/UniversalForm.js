@@ -36,7 +36,6 @@ const UniversalForm = ({ inputs, onAddData, newData }) => {
             // setFormValues({});
             // setErrors({});
             onAddData(formValues)
-
         }
     };
 
