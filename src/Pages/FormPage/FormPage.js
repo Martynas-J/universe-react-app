@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import Container from "../../Components/Container/Container"
 import UniversalForm from "../../Components/Form/UniversalForm"
-import { API_URL } from "../../Components/Config/Config";
+import { API_URL, HUMAN_IMG_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 const FormPage = () => {
     const { text, id } = useParams()
-
+    const navigate = useNavigate();
     const [discoverer, setDiscoverer] = useState('');
 
     useEffect(() => {
@@ -17,7 +17,17 @@ const FormPage = () => {
             axios.get(`${API_URL}/discoverers/${id}?_embed=photos`)
                 .then(res => {
                     const { name, country, birthplace, occupation, contribution, photos, id } = res.data
-                    const newData = { name, country, birthplace, occupation, contribution, url: photos[0].url, thumbnailUrl: photos[0].thumbnailUrl, id, photoId: photos[0].id }
+                    const newData = {
+                        name,
+                        country,
+                        birthplace,
+                        occupation,
+                        contribution,
+                        url: photos.length > 0 ? photos[0].url : HUMAN_IMG_URL,
+                        thumbnailUrl: photos.length > 0 ? photos[0].thumbnailUrl : HUMAN_IMG_URL,
+                        id,
+                        photoId: photos.length > 0 ? photos[0].id : '',
+                    }
                     return setDiscoverer(newData)
                 })
                 .catch(res => toast.error(res.message))
@@ -31,7 +41,7 @@ const FormPage = () => {
         { type: 'text', name: 'contribution', label: 'Contribution', value: '', required: true },
         { type: 'url', name: 'url', label: 'Photo URL', value: '', required: true },
         { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: true },
-      ];
+    ];
     const addDiscovererHandler = (data) => {
         const { name, country, birthplace, occupation, contribution, url, thumbnailUrl, photoId } = data
         const newDiscoverer = { name, country, birthplace, occupation, contribution }
@@ -41,12 +51,16 @@ const FormPage = () => {
                 .then((response) => {
                     const discovererId = response.data.id;
                     const photoData = { name, url, thumbnailUrl, discovererId, category: "discoverers" };
-                    return axios.patch(`${API_URL}/photos/${photoId}`, photoData);
+                    if (photoId) {
+                        return axios.patch(`${API_URL}/photos/${photoId}`, photoData)
+                    } else {
+                        return axios.post(`${API_URL}/photos`, photoData);
+                    }
                 })
                 .then(() => {
                     toast.success("Discoverer was Edited");
                     setDiscoverer("");
-                    // useNavigate("/discoverers")
+                    navigate("/discoverers")
                 })
                 .catch((res) => toast.error(res.messages));
         } else {

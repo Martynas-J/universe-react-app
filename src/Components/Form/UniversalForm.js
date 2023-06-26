@@ -34,8 +34,8 @@ const UniversalForm = ({ inputs, onAddData, discovererData }) => {
         if (hasErrors) {
             toast.error("Empty or incorrect input", { autoClose: 5000 })
         } else {
-            // setFormValues({});
-            // setErrors({});
+            setFormValues({});
+            setErrors({});
             onAddData(formValues)
 
         }
