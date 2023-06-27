@@ -7,7 +7,6 @@ import { firstLetterUpperCase } from "../../Components/Functions/Functions";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
 import classes from "./GalleryByCategoryPage.module.scss"
-// import Form from "../../Components/Form/Form";
 import FormItem from "../../Components/Form/FormItem";
 import Container from "../../Components/Container/Container";
 

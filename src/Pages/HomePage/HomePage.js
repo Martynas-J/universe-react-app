@@ -7,7 +7,7 @@ const HomePage = () => {
       <div className="home-wrapper">
         <h1 className="page-title">Home</h1>
         <div className="home-content">
-          <p >
+          <p>
             The universe is a vast expanse that contains numerous celestial objects, and one way to categorize these objects is based on their classification as planets. Planets are large bodies that orbit around stars, such as our own Sun. They are characterized by their gravitational force and their spherical shape. The universe is home to a multitude of planets, with over 100 known planets discovered so far.
           </p>
           <p>
@@ -22,7 +22,7 @@ const HomePage = () => {
           <p>
             As our exploration of the universe advances, the quest to understand the distribution and characteristics of planets will undoubtedly continue to captivate the minds of scientists and space enthusiasts alike. The study of planets not only expands our knowledge of the universe but also sparks intriguing questions about the possibility of life beyond our own planet.
           </p>
-          <ul>
+          <ul className="list">
             <li>Asteroids</li>
             <li>Comets</li>
             <li>Moons</li>
@@ -35,16 +35,16 @@ const HomePage = () => {
             <li>Galaxies</li>
             <li>Galaxy Clusters</li>
           </ul>
-          <p>The given list encompasses various celestial bodies and structures. Here is a brief description of each category:</p>
-          <p>1. Asteroids: Small rocky objects that orbit the Sun, mostly found in the asteroid belt between Mars and Jupiter.</p>
-          <p>2. Comets: Icy bodies that orbit the Sun and exhibit a coma (a glowing atmosphere) and a tail as they approach the Sun.</p>
-          <p>3. Moons: Natural satellites that orbit planets and other celestial bodies, providing companionship to their hosts.</p>
-          <p>4. Dwarf Planets: Celestial bodies that orbit the Sun and resemble planets but have not cleared their orbit from other debris.</p>
-          <p>5. Satellites: Artificial objects or natural bodies that orbit planets, moons, or other celestial bodies.</p>
-          <p>6. Planets: Large celestial bodies that orbit a star, typically spherical in shape and have cleared their orbit from other debris.</p>
-          <p>7. Star Systems: A group of stars bound together by gravitational force, often consisting of multiple stars and other celestial objects.</p>
-          <p>8. Star Clusters: An assemblage of stars that is a gravitational union and has a common origin, varying in size and shape.</p>
-          <p>9. Galaxy Groups: A collection of galaxies that are gravitationally bound and share a common origin, varying in size and shape.</p>
+          <p>The given list encompasses various celestial bodies and structures. Here is a brief description of each category:
+            Asteroids: Small rocky objects that orbit the Sun, mostly found in the asteroid belt between Mars and Jupiter.
+            Comets: Icy bodies that orbit the Sun and exhibit a coma (a glowing atmosphere) and a tail as they approach the Sun.
+            Moons: Natural satellites that orbit planets and other celestial bodies, providing companionship to their hosts.
+            Dwarf Planets: Celestial bodies that orbit the Sun and resemble planets but have not cleared their orbit from other debris.
+            Satellites: Artificial objects or natural bodies that orbit planets, moons, or other celestial bodies.
+            Planets: Large celestial bodies that orbit a star, typically spherical in shape and have cleared their orbit from other debris.
+            Star Systems: A group of stars bound together by gravitational force, often consisting of multiple stars and other celestial objects.
+            Star Clusters: An assemblage of stars that is a gravitational union and has a common origin, varying in size and shape.
+            Galaxy Groups: A collection of galaxies that are gravitationally bound and share a common origin, varying in size and shape.</p>
         </div>
       </div >
     </Container >
