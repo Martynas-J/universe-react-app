@@ -41,13 +41,14 @@ const StarPage = () => {
         <Container>
             <div className="star">
                 <h2 className="star-title"> {name}</h2>
-                <Link to={`/form/star/${id}`} className="create-link">Edit Star</Link>
+
                 <p>
                     {discovererElement}
                     {systemElement}
                     {galaxyElement}
                     {galaxyGroupElement}
                 </p>
+                <Link to={`/form/star/${id}`} className="create-link">Edit Star</Link>
             </div>
         </Container>
 

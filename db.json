@@ -351,14 +351,6 @@
       "discovererId": 21,
       "category": "discoverers",
       "id": 29
-    },
-    {
-      "name": "B12",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMpWyALbV453VEdRjyMgusmgnFzovKoBP3Q&usqp=CAU",
-      "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMpWyALbV453VEdRjyMgusmgnFzovKoBP3Q&usqp=CAU",
-      "planetId": 6,
-      "category": "planets",
-      "id": 30
     }
   ]
 }

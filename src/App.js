@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import PlanetsPage from "./Pages/PlanetsPage/PlanetsPage";
 import MainNavBar from "./Components/MainNavBar/MainNavBar"
@@ -16,12 +16,25 @@ import DiscovererFormPage from "./Pages/DiscovererFormPage/DiscovererFormPage";
 import PlanetFormPage from "./Pages/PlanetFormPage/PlanetFormPage";
 import StarFormPage from "./Pages/StarFormPage/StarFormPage";
 import SystemFormPage from "./Pages/SystemFormPage/SystemFormPage";
+import { useEffect, useState } from "react";
 
 
 function App() {
+
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  useEffect(() => {
+    if (isHomePage) {
+      document.body.classList.add('home-page');
+    } else {
+      document.body.classList.remove('home-page');
+    }
+  }, [location]);
+
   return (
     <div className="body">
-      <MainNavBar />
+      <MainNavBar isHomePage={isHomePage} />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/planets' element={<PlanetsPage />} />
