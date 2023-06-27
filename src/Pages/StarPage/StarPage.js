@@ -28,11 +28,18 @@ const StarPage = () => {
         : "No information about discoverer."
 
     let systemElement = " No information about system."
+    let starsElement =""
     if (system) {
-        const starText = system.stars.length > 1 ? "stars" : "star"
+        if (system.stars.length > 0) {
+            const starsNr = system.stars.split(",").length
+            starsElement = starsNr > 1 ? `(${starsNr} Stars)` : `(${starsNr} Star)`
+        } else {
+            starsElement = "(No Stars)"
+        }
+
         systemElement =
             <>
-                {" " + name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system.
+                {" " + name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> {starsElement} system.
             </>
     }
     const galaxyElement = galaxy ? ` A particle of the universe is located in the ${galaxy} Galaxy.` : ""
