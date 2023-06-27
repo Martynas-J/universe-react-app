@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import UniversalForm from "../../Components/Form/UniversalForm"
-import { API_URL} from "../../Components/Config/Config";
+import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -33,9 +33,10 @@ const SystemFormPage = () => {
         { type: 'text', name: 'galaxyGroup', label: 'Galaxy Group', value: '', required: true },
     ];
     const addSystemHandler = (data) => {
-        const { name, galaxy, galaxyGroup, stars, planets } = data
+        let { name, galaxy, galaxyGroup, stars, planets } = data
+        stars = stars ? stars : ""
+        planets = planets ? planets : ""
         const newSystem = { name, galaxy, galaxyGroup, stars, planets }
-
         if (system) {
             axios.patch(`${API_URL}/systems/${id}`, newSystem)
                 .then(() => {
