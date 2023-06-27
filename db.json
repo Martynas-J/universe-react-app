@@ -180,6 +180,14 @@
       "birthplace": "Edinburgh",
       "occupation": "Astronomer",
       "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
+    },
+    {
+      "name": "wegrhtyj",
+      "country": "hetrejy",
+      "birthplace": "srjdthy",
+      "occupation": "djrfg",
+      "contribution": "fdghj",
+      "id": 9
     }
   ],
   "stars": [
@@ -325,6 +333,21 @@
       "planetId": 6,
       "category": "planets",
       "id": 13
+    },
+    {
+      "name": "erwhtyk",
+      "url": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "thumbnailUrl": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "category": "systems",
+      "id": 14
+    },
+    {
+      "name": "wegrhtyj",
+      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "discovererId": 9,
+      "category": "discoverers",
+      "id": 15
     }
   ]
 }
