@@ -33,8 +33,6 @@ const StarPage = () => {
         if (system.stars.length > 0) {
             const starsNr = system.stars.split(",").length
             starsElement = starsNr > 1 ? `(${starsNr} Stars)` : `(${starsNr} Star)`
-        } else {
-            starsElement = "(No Stars)"
         }
 
         systemElement =
