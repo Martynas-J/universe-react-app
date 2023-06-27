@@ -27,8 +27,8 @@ const SystemFormPage = () => {
 
     const inputs = [
         { type: 'text', name: 'name', label: 'Name', value: '', required: true },
-        { type: 'text', name: 'planets', label: 'Planets', value: '', required: false },
-        { type: 'text', name: 'stars', label: 'Stars', value: '', required: false },
+        { type: 'text', name: 'planets', label: 'Planets (for example Planet1, Planet2)', value: '', required: false },
+        { type: 'text', name: 'stars', label: 'Stars (for example Star1, Star2)', value: '', required: false },
         { type: 'text', name: 'galaxy', label: 'Galaxy', value: '', required: true },
         { type: 'text', name: 'galaxyGroup', label: 'Galaxy Group', value: '', required: true },
     ];

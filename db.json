@@ -59,15 +59,6 @@
       "systemId": 1,
       "galaxyId": 1,
       "discovererId": 3
-    },
-    {
-      "name": "B12",
-      "discovererId": 2,
-      "galaxy": "erg",
-      "galaxyGroup": "ergerg",
-      "satellites": "cales, ASFERG",
-      "systemId": 4,
-      "id": 6
     }
   ],
   "systems": [
@@ -301,30 +292,6 @@
       "category": "planets",
       "planetId": 3,
       "id": 11
-    },
-    {
-      "name": "Robert Innes",
-      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "discovererId": 8,
-      "category": "discoverers",
-      "id": 12
-    },
-    {
-      "name": "Robert Hooke",
-      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "discovererId": 6,
-      "category": "discoverers",
-      "id": 13
-    },
-    {
-      "name": "Friedrich Bessel",
-      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
-      "discovererId": 5,
-      "category": "discoverers",
-      "id": 14
     }
   ]
 }
