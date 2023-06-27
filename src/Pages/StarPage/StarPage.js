@@ -34,7 +34,6 @@ const StarPage = () => {
             const starsNr = system.stars.split(",").length
             starsElement = starsNr > 1 ? `(${starsNr} Stars)` : `(${starsNr} Star)`
         }
-
         systemElement =
             <>
                 {" " + name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> {starsElement} system.
