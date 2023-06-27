@@ -14,7 +14,8 @@ const PlanetPage = () => {
         axios.get(`${API_URL}/planets/${id}?_expand=discoverer&_expand=system&_embed=photos`)
             .then(res => setPlanet(res.data))
             .catch(res => toast.error(res.message))
-    }, [])
+    }, [id])
+
     if (!planet) {
         return ""
     }

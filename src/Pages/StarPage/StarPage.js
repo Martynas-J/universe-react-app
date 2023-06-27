@@ -14,7 +14,8 @@ const StarPage = () => {
         axios.get(`${API_URL}/stars/${id}?_expand=discoverer&_expand=system`)
             .then(res => setStar(res.data))
             .catch(res => toast.error(res.message))
-    }, [])
+    }, [id])
+
     if (!star) {
         return ""
     }

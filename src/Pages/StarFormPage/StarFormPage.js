@@ -38,7 +38,7 @@ const StarFormPage = () => {
                 })
                 .catch(res => toast.error(res.message))
         }
-    }, [])
+    }, [id])
 
     if (!systems || !discoverers) {
         return ""

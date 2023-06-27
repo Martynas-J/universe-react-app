@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Card from "../Card/Card";
 import { HUMAN_IMG_URL } from "../Config/Config";
 

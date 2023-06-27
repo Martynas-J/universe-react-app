@@ -22,7 +22,7 @@ const SystemFormPage = () => {
                 })
                 .catch(res => toast.error(res.message))
         }
-    }, [])
+    }, [id])
 
 
     const inputs = [

@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./MainNavBar.scss"
 import { useState } from 'react';
 import MenuItem from '../MenuItem/MenuItem';

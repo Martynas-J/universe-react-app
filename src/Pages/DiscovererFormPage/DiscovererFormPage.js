@@ -32,7 +32,7 @@ const DiscovererFormPage = () => {
                 })
                 .catch(res => toast.error(res.message))
         }
-    }, [])
+    }, [id])
 
     const inputs = [
         { type: 'text', name: 'name', label: 'Name', value: '', required: true },
