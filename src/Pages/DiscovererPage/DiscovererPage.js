@@ -16,7 +16,8 @@ const DiscovererPage = () => {
         axios.get(`${API_URL}/discoverers/${id}?_embed=photos`)
             .then(res => setDiscoverer(res.data))
             .catch(res => toast.error(res.message))
-    }, [])
+    }, [id])
+
     if (!discoverer) {
         return ""
     }

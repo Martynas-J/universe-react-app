@@ -17,6 +17,7 @@ const UniversalForm = ({ inputs, onAddData, newData }) => {
             });
         }
     }, [newData]);
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         if (!value || value[0] === ' ') {

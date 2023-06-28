@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const DiscovererFormPage = () => {
-    const {id } = useParams()
+    const { id } = useParams()
     const navigate = useNavigate();
     const [discoverer, setDiscoverer] = useState('');
 
@@ -32,7 +32,7 @@ const DiscovererFormPage = () => {
                 })
                 .catch(res => toast.error(res.message))
         }
-    }, [])
+    }, [id])
 
     const inputs = [
         { type: 'text', name: 'name', label: 'Name', value: '', required: true },
@@ -40,12 +40,14 @@ const DiscovererFormPage = () => {
         { type: 'text', name: 'birthplace', label: 'Birthplace', value: '', required: true },
         { type: 'text', name: 'occupation', label: 'Occupation', value: '', required: true },
         { type: 'text', name: 'contribution', label: 'Contribution', value: '', required: true },
-        { type: 'url', name: 'url', label: 'Photo URL', value: '', required: true },
-        { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: true },
+        { type: 'url', name: 'url', label: 'Photo URL', value: '', required: false },
+        { type: 'url', name: 'thumbnailUrl', label: 'Thumbnail Photo URL', value: '', required: false },
     ];
 
     const addDiscovererHandler = (data) => {
-        const { name, country, birthplace, occupation, contribution, url, thumbnailUrl, photoId } = data
+        let { name, country, birthplace, occupation, contribution, url, thumbnailUrl, photoId } = data
+        url = url ? url : HUMAN_IMG_URL
+        thumbnailUrl = thumbnailUrl ? thumbnailUrl : HUMAN_IMG_URL
         const newDiscoverer = { name, country, birthplace, occupation, contribution }
         if (discoverer) {
             axios

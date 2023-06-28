@@ -1,0 +1,330 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "Earth",
+      "discoverer": "Thales",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": "Moon",
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mercury",
+      "discoverer": "Nicolaus Copernicus",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": "",
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 2
+    },
+    {
+      "id": 3,
+      "name": "Venus",
+      "discoverer": "Galileo Galilei",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": "",
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 3
+    },
+    {
+      "id": 4,
+      "name": "Mars",
+      "discoverer": "Percival Lowell",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": "Phobos, Deimos",
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 4
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "discoverer": "Galileo Galilei",
+      "system": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "satellites": "Io, Europa, Ganymede, Callisto",
+      "systemId": 1,
+      "galaxyId": 1,
+      "discovererId": 3
+    },
+    {
+      "name": "B12",
+      "discovererId": 2,
+      "galaxy": "erg",
+      "galaxyGroup": "ergerg",
+      "satellites": "cales, ASFERG",
+      "systemId": 4,
+      "id": 6
+    }
+  ],
+  "systems": [
+    {
+      "id": 1,
+      "name": "Solar",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune",
+      "stars": "Sun",
+      "galaxyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Alpha Centauri",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": "Proxima Centauri b",
+      "stars": "Alpha Centauri A, Alpha Centauri B, Proxima Centauri",
+      "galaxyId": 1
+    },
+    {
+      "id": 3,
+      "name": "Kepler-452",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": "Kepler-452b",
+      "stars": "Kepler-452",
+      "galaxyId": 1
+    },
+    {
+      "id": 4,
+      "name": "TRAPPIST-1",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "planets": "TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h",
+      "stars": "TRAPPIST-1",
+      "galaxyId": 1
+    },
+    {
+      "name": "new system",
+      "galaxy": "gfdhdrth",
+      "galaxyGroup": "mtyjtyhjgt",
+      "stars": "sdfsd, sgdfght, tytyuty",
+      "planets": "asd, dsgsd, fdgfd, yujyujyuy",
+      "id": 5
+    }
+  ],
+  "discoverers": [
+    {
+      "id": 1,
+      "name": "Thales",
+      "country": "Ancient Greece",
+      "birthplace": "Miletus",
+      "occupation": "Philosopher and astronomer",
+      "contribution": "The first to describe the Earth as a spherical object and the idea of its rotation on its axis."
+    },
+    {
+      "id": 2,
+      "name": "Nikolai Copernicus",
+      "country": "Poland",
+      "birthplace": "Toruń",
+      "occupation": "Astronomer and mathematician",
+      "contribution": "Developed the heliocentric theory, according to which the Sun is at the center and the planets revolve around it."
+    },
+    {
+      "id": 3,
+      "name": "Galileo Galilei",
+      "country": "Italy",
+      "birthplace": "Pisa",
+      "occupation": "Scientist, astronomer, and physicist",
+      "contribution": "Performed important observations and experiments, proving the validity of the heliocentric theory and making numerous significant discoveries related to the movement of Earth and other planets."
+    },
+    {
+      "id": 4,
+      "name": "Percival Lowell",
+      "country": "United States",
+      "birthplace": "Boston",
+      "occupation": "Astronomer, author, and mathematician",
+      "contribution": "Conducted extensive studies and observations of Mars, popularizing the idea of canals and intelligent life on the planet."
+    },
+    {
+      "id": 5,
+      "name": "Friedrich Bessel",
+      "country": "Germany",
+      "birthplace": "Minden",
+      "occupation": "Astronomer and mathematician",
+      "contribution": "Contributed to the accurate measurement of star positions and the development of celestial mechanics."
+    },
+    {
+      "id": 6,
+      "name": "Robert Hooke",
+      "country": "England",
+      "birthplace": "Freshwater",
+      "occupation": "Natural philosopher, architect, and polymath",
+      "contribution": "Made important contributions to astronomy, including the study of lunar craters and the development of the compound microscope."
+    },
+    {
+      "id": 8,
+      "name": "Robert Innes",
+      "country": "Scotland",
+      "birthplace": "Edinburgh",
+      "occupation": "Astronomer",
+      "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
+    }
+  ],
+  "stars": [
+    {
+      "id": 2,
+      "name": "Sirius",
+      "discoverer": "Friedrich Bessel",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 2,
+      "galaxyId": 1,
+      "discovererId": 5
+    },
+    {
+      "id": 3,
+      "name": "Alpha Centauri",
+      "discoverer": "Robert Hooke",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 6
+    },
+    {
+      "id": 5,
+      "name": "Proxima Centauri",
+      "discoverer": "Robert Innes",
+      "galaxy": "Milky Way",
+      "galaxyGroup": "Local Group",
+      "systemId": 3,
+      "galaxyId": 1,
+      "discovererId": 8
+    },
+    {
+      "name": "sssssssssss",
+      "discovererId": 3,
+      "galaxy": "berb",
+      "galaxyGroup": "erbbre",
+      "systemId": 2,
+      "id": 6
+    },
+    {
+      "name": "hr",
+      "discovererId": 4,
+      "galaxy": "rth",
+      "galaxyGroup": "rth",
+      "systemId": 3,
+      "id": 7
+    },
+    {
+      "name": "alfa",
+      "discovererId": 6,
+      "galaxy": "erger",
+      "galaxyGroup": "ernjtretr",
+      "systemId": 1,
+      "id": 8
+    }
+  ],
+  "photos": [
+    {
+      "id": 2,
+      "name": "Earth",
+      "url": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
+      "thumbnailUrl": "https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/ASYSK1017_01.jpg?resize=600%2C615",
+      "planetId": 1,
+      "category": "planets"
+    },
+    {
+      "id": 3,
+      "name": "Thales",
+      "url": "https://i.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?s=5c6aeaef32d59d28c9d0619c1c265af35861f8ab",
+      "thumbnailUrl": "https://preview.redd.it/thales-of-miletus-624-548-bc-was-a-mathematician-astronomer-v0-eif0gx1drz4a1.jpg?width=640&crop=smart&auto=webp&s=2b3558a91a276aca8a9b8005c98ac6cf4582c294",
+      "discovererId": 1,
+      "category": "discoverers"
+    },
+    {
+      "id": 4,
+      "name": "Nikolai Copernicus",
+      "url": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
+      "thumbnailUrl": "https://cdn.britannica.com/83/74283-050-B94F541D/Nicolaus-Copernicus.jpg",
+      "discovererId": 2,
+      "category": "discoverers"
+    },
+    {
+      "id": 5,
+      "name": "Nikolai Copernicus",
+      "url": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=900",
+      "thumbnailUrl": "https://images.newscientist.com/wp-content/uploads/2019/06/25115508/galileogalilei.jpg?width=1200",
+      "discovererId": 3,
+      "category": "discoverers"
+    },
+    {
+      "id": 6,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "id": 7,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "id": 8,
+      "name": "Percival Lowell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Percival_Lowell_1900s2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Percival_Lowell_1900s2.jpg/220px-Percival_Lowell_1900s2.jpg",
+      "discovererId": 4,
+      "category": "discoverers"
+    },
+    {
+      "name": "Coud dust",
+      "url": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "thumbnailUrl": "https://images.ctfassets.net/cnu0m8re1exe/1pKRFocQAXD8HTfa1phZzq/f6748b5356cc916052682202abdbeb9e/shutterstock_1096278443.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+      "category": "stars",
+      "id": 9
+    },
+    {
+      "name": "Venus",
+      "url": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "thumbnailUrl": "https://www.lrt.lt/img/2022/01/31/1185448-672458-756x425.png",
+      "category": "planets",
+      "planetId": 3,
+      "id": 11
+    },
+    {
+      "name": "Robert Innes",
+      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "discovererId": 8,
+      "category": "discoverers",
+      "id": 12
+    },
+    {
+      "name": "Robert Hooke",
+      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "discovererId": 6,
+      "category": "discoverers",
+      "id": 13
+    },
+    {
+      "name": "Friedrich Bessel",
+      "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
+      "discovererId": 5,
+      "category": "discoverers",
+      "id": 14
+    }
+  ]
+}

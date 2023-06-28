@@ -67,6 +67,7 @@ const PlanetFormPage = () => {
     let { name, discovererId, galaxy, galaxyGroup, satellites, url, thumbnailUrl, photoId, systemId } = data
     discovererId = Number(discovererId)
     systemId = Number(systemId)
+    satellites = satellites ? satellites : ""
     const newPlanet = { name, discovererId, galaxy, galaxyGroup, satellites, systemId }
 
     if (planet) {

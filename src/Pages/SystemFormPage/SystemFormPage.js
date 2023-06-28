@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import UniversalForm from "../../Components/Form/UniversalForm"
-import { API_URL} from "../../Components/Config/Config";
+import { API_URL } from "../../Components/Config/Config";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -22,20 +22,21 @@ const SystemFormPage = () => {
                 })
                 .catch(res => toast.error(res.message))
         }
-    }, [])
+    }, [id])
 
 
     const inputs = [
         { type: 'text', name: 'name', label: 'Name', value: '', required: true },
-        { type: 'text', name: 'planets', label: 'Planets', value: '', required: false },
-        { type: 'text', name: 'stars', label: 'Stars', value: '', required: false },
+        { type: 'text', name: 'planets', label: 'Planets (for example Planet1, Planet2)', value: '', required: false },
+        { type: 'text', name: 'stars', label: 'Stars (for example Star1, Star2)', value: '', required: false },
         { type: 'text', name: 'galaxy', label: 'Galaxy', value: '', required: true },
         { type: 'text', name: 'galaxyGroup', label: 'Galaxy Group', value: '', required: true },
     ];
     const addSystemHandler = (data) => {
-        const { name, galaxy, galaxyGroup, stars, planets } = data
+        let { name, galaxy, galaxyGroup, stars, planets } = data
+        stars = stars ? stars : ""
+        planets = planets ? planets : ""
         const newSystem = { name, galaxy, galaxyGroup, stars, planets }
-
         if (system) {
             axios.patch(`${API_URL}/systems/${id}`, newSystem)
                 .then(() => {

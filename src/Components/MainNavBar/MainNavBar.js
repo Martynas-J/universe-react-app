@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./MainNavBar.scss"
 import { useState } from 'react';
 import MenuItem from '../MenuItem/MenuItem';
@@ -28,8 +28,7 @@ const MainNavBar = ({ isHomePage }) => {
                 </li>
                 <li className='navigation-item'>
                     <NavLink to='/gallery' className='navigation-link'>Gallery</NavLink>
-                </li>
-                {menuOn ? <li><MenuItem /></li> : ""}
+                </li>{menuOn ? <li><MenuItem /></li> : ""}
                 <li>
                     <button className='logo-button' onClick={addFormHandler}>
                         <img className='logo' src='https://icon-library.com/images/hamburger-menu-icon-svg/hamburger-menu-icon-svg-16.jpg'></img>

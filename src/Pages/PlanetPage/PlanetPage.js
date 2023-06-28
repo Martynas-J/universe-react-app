@@ -14,18 +14,24 @@ const PlanetPage = () => {
         axios.get(`${API_URL}/planets/${id}?_expand=discoverer&_expand=system&_embed=photos`)
             .then(res => setPlanet(res.data))
             .catch(res => toast.error(res.message))
-    }, [])
+    }, [id])
+
     if (!planet) {
         return ""
     }
 
     const { name, photos, discoverer, discovererId, system, systemId, galaxy, satellites } = planet
-    const starText = system.stars.length > 1 ? "stars" : "star"
+    let starsElement = ""
     let satellitesText = "has no satellites"
-    if (satellites.length > 1) {
-        satellitesText = ` natural satellites are  ${satellites}`
-    } else if (satellites.length === 1) {
-        satellitesText = ` natural satellite is  ${satellites[0]}`
+
+    if (system.stars.length > 0) {
+        const starsNr = system.stars.split(",").length
+        starsElement = starsNr > 1 ? `(${starsNr} Stars)` : `(${starsNr} Star)`
+    }
+
+    if (satellites.length > 0) {
+        const satellitesNr = satellites.split(",").length
+        satellitesText = satellitesNr > 1 ? ` satellites are ${satellites}` : ` satellite is ${satellites}`
     }
 
     return (
@@ -35,7 +41,7 @@ const PlanetPage = () => {
                 <Link to={`/form/planet/${id}`} className="create-link">Edit Planet</Link>
                 <h2 className="planet-title"> {name}</h2>
                 <p className="planet-content">
-                    The scientist who made the most significant contributions to the discovery is <Link to={`/discoverers/${discovererId}`}>{discoverer.name} {discoverer.occupation}</Link>. {name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system, which is located in the {galaxy} Galaxy. {name} {satellitesText}.
+                    The scientist who made the most significant contributions to the discovery is <Link to={`/discoverers/${discovererId}`}>{discoverer.name} {discoverer.occupation}</Link>. {name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> {starsElement} system, which is located in the {galaxy} Galaxy. {name} {satellitesText}.
                 </p>
             </div>
         </Container>

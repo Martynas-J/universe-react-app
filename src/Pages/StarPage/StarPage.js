@@ -14,7 +14,8 @@ const StarPage = () => {
         axios.get(`${API_URL}/stars/${id}?_expand=discoverer&_expand=system`)
             .then(res => setStar(res.data))
             .catch(res => toast.error(res.message))
-    }, [])
+    }, [id])
+
     if (!star) {
         return ""
     }
@@ -27,11 +28,15 @@ const StarPage = () => {
         : "No information about discoverer."
 
     let systemElement = " No information about system."
+    let starsElement =""
     if (system) {
-        const starText = system.stars.length > 1 ? "stars" : "star"
+        if (system.stars.length > 0) {
+            const starsNr = system.stars.split(",").length
+            starsElement = starsNr > 1 ? `(${starsNr} Stars)` : `(${starsNr} Star)`
+        }
         systemElement =
             <>
-                {" " + name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> ({system.stars.length} {starText}) system.
+                {" " + name} belongs to the <Link to={`/systems/${systemId}`}>{system.name}</Link> {starsElement} system.
             </>
     }
     const galaxyElement = galaxy ? ` A particle of the universe is located in the ${galaxy} Galaxy.` : ""

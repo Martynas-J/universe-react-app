@@ -16,7 +16,7 @@ import DiscovererFormPage from "./Pages/DiscovererFormPage/DiscovererFormPage";
 import PlanetFormPage from "./Pages/PlanetFormPage/PlanetFormPage";
 import StarFormPage from "./Pages/StarFormPage/StarFormPage";
 import SystemFormPage from "./Pages/SystemFormPage/SystemFormPage";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
     } else {
       document.body.classList.remove('home-page');
     }
-  }, [location]);
+  }, [isHomePage]);
 
   return (
     <div className="body">
