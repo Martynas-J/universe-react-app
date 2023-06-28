@@ -68,6 +68,15 @@
       "satellites": "",
       "systemId": 4,
       "id": 6
+    },
+    {
+      "name": "fdjfgk,h",
+      "discovererId": 4,
+      "galaxy": "ytkui;'",
+      "galaxyGroup": "ytfuil;",
+      "satellites": "hjl,jhg,",
+      "systemId": 2,
+      "id": 7
     }
   ],
   "systems": [
@@ -114,14 +123,6 @@
       "stars": "sdfsd, sgdfght, tytyuty",
       "planets": "asd, dsgsd, fdgfd, yujyujyuy",
       "id": 5
-    },
-    {
-      "name": "werye",
-      "galaxy": "erg",
-      "galaxyGroup": "erger",
-      "stars": "dsag",
-      "planets": "as",
-      "id": 6
     }
   ],
   "discoverers": [
@@ -182,11 +183,11 @@
       "contribution": "Discovered Proxima Centauri, the closest known star to the Solar System, and made significant contributions to the study of double stars."
     },
     {
-      "name": "wegrhtyj",
-      "country": "hetrejy",
-      "birthplace": "srjdthy",
-      "occupation": "djrfg",
-      "contribution": "fdghj",
+      "name": "trhtrh",
+      "country": "rthtrh",
+      "birthplace": "rthtrh",
+      "occupation": "rthtrh",
+      "contribution": "rthrthrth",
       "id": 9
     }
   ],
@@ -342,12 +343,27 @@
       "id": 14
     },
     {
-      "name": "wegrhtyj",
+      "name": "fdjfgk,h",
+      "url": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "thumbnailUrl": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "planetId": 7,
+      "category": "planets",
+      "id": 15
+    },
+    {
+      "name": "trhtrh",
       "url": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
       "thumbnailUrl": "https://nuotraukos.mediakatalogas.lt/rsynced_images/person-1205346_1280.png",
       "discovererId": 9,
       "category": "discoverers",
-      "id": 15
+      "id": 16
+    },
+    {
+      "name": "dhgfh",
+      "url": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "thumbnailUrl": "https://images.twinkl.co.uk/tr/raw/upload/u/ux/earth-parents-wiki_ver_1.jpg",
+      "category": "stars",
+      "id": 17
     }
   ]
 }
